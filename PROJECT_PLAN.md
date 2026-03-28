@@ -275,47 +275,53 @@ For each formula or figure bounding box identified in Step 3, this step renders 
 
 ---
 
-### Step 6 — Human Review (Teacher-Facing)
+### Step 6 — Supabase Setup & Initial Import
 
-**Tool:** Streamlit review interface (tab within the main pipeline app)
-**Input:** All unreviewed problem JSON files
-**Output:** Approved problems with `human_reviewed: true`, corrected text, assigned topic tags and difficulty
-**Script:** `scripts/06_review_app.py`
+**Tool:** Python `supabase-py` + SQL migrations
+**Input:** All problem JSON files + formula PNG files from Step 5
+**Output:** All problems upserted to Supabase `problems` table with `human_reviewed = false`; formula PNGs uploaded to Supabase Storage
+**Script:** `scripts/06_import_to_db.py`
 
-This is the teacher's primary interaction with the pipeline. The interface presents one problem at a time and shows:
+Sets up the Supabase schema (migrations), uploads all formula PNGs to the `problem-images` Storage bucket, and upserts every problem row. All rows land with `human_reviewed = false` — nothing is live on the site yet. Re-running is safe (upsert on unique constraint). This step runs once per pipeline cycle, before any review happens.
 
-- **Left panel:** The original PDF page with the problem's region highlighted (so the teacher sees exactly what the source document looked like)
+Importing first (before review) is what enables **multi-user review**: once the data is in Supabase, any reviewer can open the Step 7 UI from any browser without installing anything locally.
+
+**Human review:** None at this step.
+
+---
+
+### Step 7 — Review UI (Streamlit, Supabase-backed)
+
+**Tool:** Streamlit app reading/writing directly from Supabase
+**Input:** Unreviewed rows in Supabase (`human_reviewed = false`)
+**Output:** Approved rows with `human_reviewed = true`, corrected text, topic tags, difficulty — written back to Supabase
+**Script:** `scripts/07_review_app.py`
+
+The interface presents one problem at a time and shows:
+
+- **Left panel:** The original PDF page with the problem's region highlighted
 - **Right panel:**
-  - Extracted plain text, fully editable in a text area (she can fix OCR errors or segmentation mistakes)
-  - Formula/figure images displayed inline — she can see exactly what will appear in the app
-  - An **"Image looks wrong?"** button: allows her to redraw the crop boundary by clicking two corners on the page image — no code required
-  - Multi-select dropdown for **Témakörök** (pre-filled with auto-detected suggestions if possible)
+  - Extracted plain text, fully editable in a text area (fix OCR errors or segmentation mistakes)
+  - Formula images displayed inline — reviewers see exactly what will appear in the app
+  - An **"Image looks wrong?"** button: redraw the crop boundary by clicking two corners — no code required
+  - Multi-select dropdown for **Témakörök** (pre-filled with auto-detected keyword suggestions)
   - Dropdown for **Nehézségi szint** (könnyű / közepes / nehéz)
   - Point value field
   - **Jóváhagyás (✓)** / **Kihagyás** / **Törlés** buttons
 
-The auto-detection of topic tags (pre-fill) works by simple keyword matching in the plain text — e.g. "háromszög" → `geometria-sik`, "valószínűség" → `valoszinuseg`. The teacher corrects any wrong suggestions.
+Because state is stored in Supabase, multiple reviewers can work simultaneously from different machines — each opens the Streamlit app in their browser and picks up where others left off. A progress counter shows: "142 / 1454 feladat jóváhagyva".
 
-A progress counter shows: "142 / 380 feladat jóváhagyva". She can close and reopen the app at any time — progress is saved after every approval.
+**Human review:** Yes — this entire step is human review. It is the quality gate before anything goes live.
 
-**Human review:** Yes — this entire step is human review. It is the quality gate before anything reaches the live site.
-
-**Estimated time per problem:** 20–40 seconds for plain text-only problems; 1–2 minutes for problems with multiple formula images that need crop adjustment. For the full historical archive (~30 years × ~40 problems), expect 30–60 hours of total review time spread across multiple sessions.
+**Estimated time per problem:** 20–40 seconds for plain text-only problems; 1–2 minutes for problems with formula images that need crop adjustment.
 
 ---
 
-### Step 7 — Import to Database
+### Step 8 — Go Live (ISR Revalidation)
 
-**Tool:** Python `supabase-py`
-**Input:** All `human_reviewed: true` JSON files + formula/figure PNG files
-**Output:** Rows upserted to Supabase `problems` table; images uploaded to Supabase Storage
-**Script:** `scripts/07_import_to_db.py`
+After enough problems are approved in Step 7, trigger a Next.js ISR revalidation webhook so the live site updates within seconds. This can be done from the Streamlit UI with a single button click.
 
-Uploads formula and figure PNGs to the `problem-images` Supabase Storage bucket, replaces local file references with public CDN URLs in `statement_text`, then upserts each problem row using the `(year, exam_type, problem_number, sub_part)` unique constraint. Re-running is safe — already-imported problems are updated, not duplicated. After import, triggers a Next.js ISR revalidation webhook so the live site updates within seconds.
-
-The Streamlit UI shows an import summary: "47 új feladat feltöltve, 3 frissítve, 0 hiba."
-
-**Human review:** None. Any import errors are shown in the UI for manual investigation.
+**Human review:** None.
 
 ---
 
@@ -340,10 +346,13 @@ The Streamlit UI shows an import summary: "47 új feladat feltöltve, 3 frissít
 [05] Crop formula & figure images to PNG
          │
          ▼
-[06] ★ TEACHER REVIEW ★ — approve text, tags, difficulty
+[06] Import all problems to Supabase (human_reviewed = false)
          │
          ▼
-[07] Import reviewed problems to Supabase → live on site
+[07] ★ REVIEW ★ — multi-user Streamlit UI, Supabase-backed
+         │
+         ▼
+[08] Trigger ISR revalidation → problems go live on site
 ```
 
 ---
@@ -497,8 +506,8 @@ veglesine-web/
 │   ├── 03_extract_pages.py         # PyMuPDF text + image extraction per page
 │   ├── 04_segment_problems.py      # Heuristic problem + sub-part boundary detection
 │   ├── 05_crop_images.py           # Render PDF regions to high-res formula/figure PNGs
-│   ├── 06_review_app.py            # Streamlit review UI (embedded in pipeline_app.py)
-│   ├── 07_import_to_db.py          # Upload reviewed problems + images to Supabase
+│   ├── 06_import_to_db.py          # Upload all problems + images to Supabase (human_reviewed=false)
+│   ├── 07_review_app.py            # Streamlit review UI — reads/writes Supabase directly
 │   ├── config.py                    # Paths, Supabase URL/key (reads from .env)
 │   ├── requirements.txt             # Python deps: pymupdf, pytesseract, streamlit, supabase
 │   ├── PIPELINE_GUIDE.md           # Step-by-step guide for the teacher (Hungarian)
@@ -539,19 +548,21 @@ veglesine-web/
 ## 6. Build Sequence
 
 ### Milestone 1 — PDF Extraction Pipeline
-**Delivers:** Working local pipeline: downloads all historical PDFs, extracts problems into JSON with formula image crops, produces the Streamlit review app. Teacher can run the full pipeline with a double-click.
+**Delivers:** Working local pipeline: downloads all historical PDFs, extracts problems into JSON with formula image crops.
 
 **Dependency:** None. This is the data foundation.
 
+**Status:** ✅ Complete (Steps 1–5 done, v0.4.0)
+
 **Estimated hours:** 40–55h
-Steps 1–2 (download + classify): 6h. Step 3 (PyMuPDF extraction): 8h. Step 4 (segmentation heuristics): 20h (hardest). Step 5 (image cropping): 5h. Step 6 (Streamlit review UI): 10h. Testing across 20+ years of PDFs: 6h.
+Steps 1–2 (download + classify): 6h. Step 3 (PyMuPDF extraction): 8h. Step 4 (segmentation heuristics): 20h (hardest). Step 5 (image cropping): 5h. Testing across 20+ years of PDFs: 6h.
 
 ---
 
-### Milestone 2 — Database Schema & First Data Import
-**Delivers:** Supabase project live with full schema, RLS policies, storage bucket, and the first batch of teacher-reviewed problems imported. Importer script (Step 7) validated.
+### Milestone 2 — Database Schema & Initial Import (Step 6)
+**Delivers:** Supabase project live with full schema, RLS policies, storage bucket, and all ~1454 problems imported as `human_reviewed = false`. Import script (Step 6) validated.
 
-**Dependency:** Milestone 1 must produce reviewed JSON files.
+**Dependency:** Milestone 1 must produce problem JSON files and formula PNGs.
 
 **Estimated hours:** 10–15h
 Supabase setup + migrations: 4h. RLS policies: 2h. Importer script: 4h. Validation: 3–5h.
