@@ -93,25 +93,25 @@ def _save_manifest(manifest: dict) -> None:
 # Storage helpers
 # ---------------------------------------------------------------------------
 
-def _upload_formula_pngs(
+def _upload_crop_pngs(
     supabase,
     pdf_stem: str,
     log: Callable,
 ) -> dict[str, str]:
     """
-    Upload all formula PNGs for `pdf_stem` to Supabase Storage.
+    Upload all problem-crop PNGs for `pdf_stem` to Supabase Storage.
 
     Returns a mapping  {filename: public_url}  for every uploaded PNG.
     """
-    formulas_dir = PROBLEMS_DIR / pdf_stem / "formulas"
-    if not formulas_dir.exists():
+    crops_dir = PROBLEMS_DIR / pdf_stem / "crops"
+    if not crops_dir.exists():
         return {}
 
     url_map: dict[str, str] = {}
-    pngs = sorted(formulas_dir.glob("*.png"))
+    pngs = sorted(crops_dir.glob("*.png"))
 
     for png_path in pngs:
-        storage_path = f"{pdf_stem}/formulas/{png_path.name}"
+        storage_path = f"{pdf_stem}/crops/{png_path.name}"
         try:
             data = png_path.read_bytes()
             supabase.storage.from_(STORAGE_BUCKET).upload(
@@ -145,26 +145,21 @@ def _make_source_key(pdf_stem: str, problem_number: int, sub_part: str | None) -
 
 def _build_row(
     problem: dict,
-    formula_url_map: dict[str, str],
+    crop_url_map: dict[str, str],
 ) -> dict:
     """
     Convert a problem JSON dict to a Supabase row dict.
 
-    formula_url_map: {filename: public_url} — built from uploaded PNGs.
-    The formula_image_urls column stores URLs in the same order as
-    image_refs so the renderer can resolve {{formula:filename.png}} → URL.
+    crop_url_map: {filename: public_url} — built from uploaded crop PNGs.
+    All sub-parts of the same problem_number share the same crop image.
     """
     pdf_stem = problem["pdf_stem"]
     problem_number = problem["problem_number"]
     sub_part = problem.get("sub_part")
 
-    # Build ordered list of public URLs from image_refs
-    formula_image_urls = []
-    for ref in problem.get("image_refs", []):
-        fname = ref.get("filename", "")
-        url = formula_url_map.get(fname, "")
-        if url:
-            formula_image_urls.append(url)
+    # All sub-parts share the same crop PNG (named by problem number only)
+    crop_filename = f"{pdf_stem}_prob_{problem_number:03d}.png"
+    problem_image_url = crop_url_map.get(crop_filename)
 
     return {
         "source_key":            _make_source_key(pdf_stem, problem_number, sub_part),
@@ -179,8 +174,7 @@ def _build_row(
         "sub_part":              sub_part,
         "statement_text":        problem.get("statement_text", ""),
         "max_points":            problem.get("max_points"),
-        "formula_image_urls":    formula_image_urls,
-        "has_figure":            bool(problem.get("image_refs")),
+        "problem_image_url":     problem_image_url,
         "ocr_used":              problem.get("ocr_used", False),
         "notes":                 problem.get("notes", ""),
         "human_reviewed":        False,
@@ -198,7 +192,7 @@ def _import_pdf(
     log: Callable,
 ) -> dict:
     """
-    Upload formula PNGs and upsert all problem rows for `pdf_stem`.
+    Upload crop PNGs and upsert all problem rows for `pdf_stem`.
 
     Returns {"uploaded_pngs": int, "inserted": int, "updated": int, "skipped": int}
     """
@@ -207,8 +201,8 @@ def _import_pdf(
         log(f"    [SKIP] Nincs feladat könyvtár: {pdf_stem}")
         return {"uploaded_pngs": 0, "inserted": 0, "updated": 0, "skipped": 0}
 
-    # 1. Upload formula PNGs
-    url_map = _upload_formula_pngs(supabase, pdf_stem, log)
+    # 1. Upload crop PNGs
+    url_map = _upload_crop_pngs(supabase, pdf_stem, log)
 
     # 2. Load all problem JSONs
     json_files = sorted(problem_dir.glob("problem_*.json"))

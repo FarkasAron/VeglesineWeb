@@ -90,14 +90,15 @@ Unlimited deployments, 100 GB bandwidth/month, automatic HTTPS, CDN-served stati
 | `exam_part` | `enum('I','II')` | NO | Part I (short answer) or Part II (long answer) |
 | `problem_number` | `smallint` | NO | Official number within the exam |
 | `sub_part` | `varchar(4)` | YES | Sub-label: 'a', 'b', 'c' — NULL for single-part problems |
-| `statement_text` | `text` | NO | Full problem statement as plain text. Inline formula images marked as `{{formula:filename.png}}`. Inline KaTeX for simple cases uses `$...$`. |
-| `solution_text` | `text` | YES | Official solution text, same format as `statement_text` |
+| `problem_image_url` | `text` | YES | Supabase Storage URL for the full-problem region crop PNG. This is the primary display artifact — the website shows this image, not rendered text. |
+| `statement_text` | `text` | NO | Raw extracted text from PyMuPDF/OCR. Not displayed on the website. Kept for potential future full-text search. Quality varies — no manual correction required. |
+| `solution_text` | `text` | YES | Official solution text (future use) |
 | `max_points` | `smallint` | YES | Official maximum point value |
-| `difficulty_level` | `enum('könnyű','közepes','nehéz')` | YES | Teacher-assigned difficulty tag |
-| `topic_tags` | `text[]` | NO | Array of canonical témakör slugs |
-| `has_figure` | `boolean` DEFAULT false | NO | True if problem includes a geometric diagram or data table |
-| `formula_image_urls` | `text[]` | YES | Ordered list of Supabase Storage URLs for inline formula PNGs |
-| `figure_urls` | `text[]` | YES | Supabase Storage URLs for diagrams/figures (separate from inline formulas) |
+| `difficulty_level` | `enum('könnyű','közepes','nehéz')` | YES | Reviewer-assigned difficulty |
+| `topic_tags` | `text[]` | NO | Array of canonical témakör slugs, assigned per sub-part during review |
+| `has_figure` | `boolean` DEFAULT false | NO | True if problem includes a diagram |
+| `formula_image_urls` | `text[]` | YES | Reserved for future use — not currently populated |
+| `figure_urls` | `text[]` | YES | Reserved for future use |
 | `source_pdf_filename` | `varchar(255)` | NO | Original PDF filename, e.g. `mat_kozep_2023_maj_fl.pdf` |
 | `source_pdf_page` | `smallint` | NO | Page number in source PDF (1-indexed) |
 | `source_pdf_url` | `text` | YES | Direct link to the source PDF on oktatas.hu |
@@ -110,22 +111,17 @@ Unlimited deployments, 100 GB bandwidth/month, automatic HTTPS, CDN-served stati
 | `fts_vector` | `tsvector` | YES | Auto-maintained full-text search index on `statement_text` |
 
 **Indexes:**
-- `UNIQUE (year, exam_type, problem_number, sub_part)` — prevents duplicate imports
+- `UNIQUE (source_key)` — prevents duplicate imports
 - `GIN(topic_tags)` — fast topic filtering
-- `GIN(fts_vector)` — full-text search
-- `(human_reviewed)` — admin queue filtering
+- `(human_reviewed)` — review queue filtering
 - `(year, exam_type)` — year/type filter queries
 
-**Note on `statement_text` format:** A typical value looks like:
+**Note on display:** The website displays `problem_image_url` as an `<img>` tag — the full problem region rendered directly from the source PDF at 2× scale. No text rendering, no formula reassembly. What you see in the app is pixel-identical to the original exam paper.
 
-```
-Egy egyenlő szárú háromszög alapja 10 cm, szárai egyenként 13 cm hosszúak.
-{{formula:2023_kozep_p3_f1.png}}
-a) Számítsa ki a háromszög területét!
-b) Számítsa ki a háromszög beírt körének sugarát!
-```
-
-The app renders this by splitting on `{{formula:...}}` tokens, displaying text segments as HTML (with KaTeX processing for `$...$` spans), and displaying formula tokens as `<img>` tags sourced from Supabase Storage.
+**Task group filtering** (derived, no manual tagging needed):
+- Problems 1–4 → "Rövid feladatok" (short answer, always Part I)
+- Problems 5+ → "Hosszabb feladatok" (longer problems, Part I/II depending on exam type)
+This grouping is computed at query time from `problem_number` — no extra column needed.
 
 ---
 
@@ -262,29 +258,33 @@ Plain text paragraphs (task explanation, given data, the question) are assembled
 
 ---
 
-### Step 5 — Formula & Figure Image Cropping
+### Step 5 — Problem Region Cropping
 
-**Tool:** PyMuPDF (using stored bounding boxes from Step 3)
-**Input:** Problem JSON files, original PDFs
-**Output:** Per-formula PNG crops saved to `scripts/data/problems/{pdf_stem}/formulas/`, filenames referenced in `statement_text` as `{{formula:...}}`
+**Tool:** PyMuPDF
+**Input:** Problem JSON files + original PDFs (re-runs step 4 segmentation to obtain y-ranges)
+**Output:** One PNG per problem number saved to `scripts/data/problems/{pdf_stem}/crops/`
 **Script:** `scripts/05_crop_images.py`
 
-For each formula or figure bounding box identified in Step 3, this step renders the PDF page to a high-resolution raster (3× scale for sharpness on retina displays) and crops the exact region. The result is a clean, sharp PNG of just the formula or diagram. No LaTeX conversion happens — the image is the final artifact displayed in the app.
+For each unique problem number in a PDF, this step renders the full problem region (from the first detected line of the problem to the last) as a high-resolution PNG at 2× scale. All sub-parts (a/b/c) of a problem share the same crop — you see the full problem in context when reviewing any sub-part.
 
-**Human review:** None at this step. Review happens in Step 6.
+The crop covers the horizontal full width of the text area (excluding page margins) and the vertical extent of the entire problem. This produces a pixel-perfect image identical to the original exam paper — equations, diagrams, and formatting all preserved exactly.
+
+**Why image-only (not text):** PyMuPDF text extraction is reliable for plain Hungarian prose but breaks down for equations, superscripts, and diagrams. Rather than requiring manual text correction for every problem, the image is the primary display artifact. The extracted `statement_text` (imperfect) is stored in the DB for potential future search use but never displayed.
+
+**Human review:** None at this step.
 
 ---
 
-### Step 6 — Supabase Setup & Initial Import
+### Step 6 — Supabase Import
 
-**Tool:** Python `supabase-py` + SQL migrations
-**Input:** All problem JSON files + formula PNG files from Step 5
-**Output:** All problems upserted to Supabase `problems` table with `human_reviewed = false`; formula PNGs uploaded to Supabase Storage
+**Tool:** Python `supabase-py`
+**Input:** All problem JSON files + crop PNG files from Step 5
+**Output:** All problems upserted to Supabase `problems` table with `human_reviewed = false`; crop PNGs uploaded to Supabase Storage (`problem-images` bucket)
 **Script:** `scripts/06_import_to_db.py`
 
-Sets up the Supabase schema (migrations), uploads all formula PNGs to the `problem-images` Storage bucket, and upserts every problem row. All rows land with `human_reviewed = false` — nothing is live on the site yet. Re-running is safe (upsert on unique constraint). This step runs once per pipeline cycle, before any review happens.
+Uploads every crop PNG to `{pdf_stem}/crops/{filename}` in Supabase Storage, then upserts each problem row with `problem_image_url` pointing to the public CDN URL. Re-running is safe (upsert on `source_key`). Rows already reviewed (`human_reviewed = true`) are skipped to protect review work.
 
-Importing first (before review) is what enables **multi-user review**: once the data is in Supabase, any reviewer can open the Step 7 UI from any browser without installing anything locally.
+Importing before review enables **multi-user review**: once the data is in Supabase, any reviewer opens the Step 7 UI in a browser — no local files needed.
 
 **Human review:** None at this step.
 
@@ -294,26 +294,27 @@ Importing first (before review) is what enables **multi-user review**: once the 
 
 **Tool:** Streamlit app reading/writing directly from Supabase
 **Input:** Unreviewed rows in Supabase (`human_reviewed = false`)
-**Output:** Approved rows with `human_reviewed = true`, corrected text, topic tags, difficulty — written back to Supabase
+**Output:** Approved rows with `human_reviewed = true`, topic tags, difficulty, verified problem number/sub-part — written back to Supabase
 **Script:** `scripts/07_review_app.py`
 
-The interface presents one problem at a time and shows:
+The interface is designed for speed. Each screen shows:
 
-- **Left panel:** The original PDF page with the problem's region highlighted
-- **Right panel:**
-  - Extracted plain text, fully editable in a text area (fix OCR errors or segmentation mistakes)
-  - Formula images displayed inline — reviewers see exactly what will appear in the app
-  - An **"Image looks wrong?"** button: redraw the crop boundary by clicking two corners — no code required
-  - Multi-select dropdown for **Témakörök** (pre-filled with auto-detected keyword suggestions)
-  - Dropdown for **Nehézségi szint** (könnyű / közepes / nehéz)
-  - Point value field
-  - **Jóváhagyás (✓)** / **Kihagyás** / **Törlés** buttons
+- **Problem image** (full-width): the crop PNG loaded directly from the Supabase CDN — pixel-perfect replica of the exam paper. No text editing needed.
+- **Metadata form** (compact, below or beside the image):
+  - **Témakörök** — multi-select from the canonical topic taxonomy (auto-suggested from keyword scan of extracted text)
+  - **Nehézségi szint** — könnyű / közepes / nehéz
+  - **Feladatszám** — editable number (pre-filled, for correcting segmentation mistakes)
+  - **Alrész** — editable field: a / b / c / empty (for correcting sub-part detection)
+  - **Jóváhagyás (✓)** / **Kihagyás** / **Megjelölés** buttons
+- **Sidebar:** reviewer name, progress counter ("142 / 1454 jóváhagyva"), filter toggle
 
-Because state is stored in Supabase, multiple reviewers can work simultaneously from different machines — each opens the Streamlit app in their browser and picks up where others left off. A progress counter shows: "142 / 1454 feladat jóváhagyva".
+Because `problem_image_url` is a public CDN URL, remote reviewers see the exact same image as local reviewers — no PDF files required on their machine.
 
-**Human review:** Yes — this entire step is human review. It is the quality gate before anything goes live.
+Multiple reviewers work simultaneously — state is in Supabase, not local. Each reviewer opens the app URL, enters their name, and starts tagging.
 
-**Estimated time per problem:** 20–40 seconds for plain text-only problems; 1–2 minutes for problems with formula images that need crop adjustment.
+**Estimated time per problem: 10–20 seconds.** No text correction, just look at the image and assign tags.
+
+**Human review:** Yes — this is the quality gate. The reviewer verifies the problem crop looks correct, assigns topic tags and difficulty, and approves.
 
 ---
 
@@ -343,16 +344,16 @@ After enough problems are approved in Step 7, trigger a Next.js ISR revalidation
 [04] Segment into individual problems + sub-parts
          │
          ▼
-[05] Crop formula & figure images to PNG
+[05] Crop full problem regions → one PNG per problem number
          │
          ▼
-[06] Import all problems to Supabase (human_reviewed = false)
+[06] Upload crop PNGs + upsert rows to Supabase (human_reviewed = false)
          │
          ▼
-[07] ★ REVIEW ★ — multi-user Streamlit UI, Supabase-backed
+[07] ★ REVIEW ★ — show crop image, assign tags, approve (10–20 s/problem)
          │
          ▼
-[08] Trigger ISR revalidation → problems go live on site
+[08] Trigger ISR revalidation → approved problems go live on site
 ```
 
 ---

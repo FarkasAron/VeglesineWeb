@@ -26,12 +26,7 @@
       "skipped_pages": 13,
       "ocr_used": false
     },
-    "formulas_processed": true,
-    "formula_processing": {
-      "formulas": 1,
-      "updated": 8,
-      "ok": true
-    },
+    "crops_generated": true,
     "db_imported": true
   },
   "k_mat_25okt_ut.pdf": {
@@ -82,12 +77,7 @@
       "skipped_pages": 13,
       "ocr_used": false
     },
-    "formulas_processed": true,
-    "formula_processing": {
-      "formulas": 1,
-      "updated": 15,
-      "ok": true
-    },
+    "crops_generated": true,
     "db_imported": true
   },
   "k_mat_25maj_ut.pdf": {
@@ -138,12 +128,7 @@
       "skipped_pages": 15,
       "ocr_used": false
     },
-    "formulas_processed": true,
-    "formula_processing": {
-      "formulas": 1,
-      "updated": 4,
-      "ok": true
-    },
+    "crops_generated": true,
     "db_imported": true
   },
   "e_mat_25okt_ut.pdf": {
@@ -194,12 +179,7 @@
       "skipped_pages": 15,
       "ocr_used": false
     },
-    "formulas_processed": true,
-    "formula_processing": {
-      "formulas": 2,
-      "updated": 6,
-      "ok": true
-    },
+    "crops_generated": true,
     "db_imported": true
   },
   "e_mat_25maj_ut.pdf": {
@@ -250,12 +230,7 @@
       "skipped_pages": 13,
       "ocr_used": false
     },
-    "formulas_processed": true,
-    "formula_processing": {
-      "formulas": 1,
-      "updated": 12,
-      "ok": true
-    },
+    "crops_generated": true,
     "db_imported": true
   },
   "k_mat_24okt_ut.pdf": {
@@ -306,12 +281,7 @@
       "skipped_pages": 15,
       "ocr_used": false
     },
-    "formulas_processed": true,
-    "formula_processing": {
-      "formulas": 3,
-      "updated": 16,
-      "ok": true
-    },
+    "crops_generated": true,
     "db_imported": true
   },
   "e_mat_24okt_ut.pdf": {
@@ -362,12 +332,7 @@
       "skipped_pages": 13,
       "ocr_used": false
     },
-    "formulas_processed": true,
-    "formula_processing": {
-      "formulas": 1,
-      "updated": 6,
-      "ok": true
-    },
+    "crops_generated": true,
     "db_imported": true
   },
   "k_mat_24maj_ut.pdf": {
@@ -418,12 +383,7 @@
       "skipped_pages": 15,
       "ocr_used": false
     },
-    "formulas_processed": true,
-    "formula_processing": {
-      "formulas": 1,
-      "updated": 12,
-      "ok": true
-    },
+    "crops_generated": true,
     "db_imported": true
   },
   "e_mat_24maj_ut.pdf": {
@@ -474,12 +434,7 @@
       "skipped_pages": 13,
       "ocr_used": false
     },
-    "formulas_processed": true,
-    "formula_processing": {
-      "formulas": 1,
-      "updated": 15,
-      "ok": true
-    },
+    "crops_generated": true,
     "db_imported": true
   },
   "k_mat_23okt_ut.pdf": {
@@ -530,12 +485,7 @@
       "skipped_pages": 15,
       "ocr_used": false
     },
-    "formulas_processed": true,
-    "formula_processing": {
-      "formulas": 3,
-      "updated": 6,
-      "ok": true
-    },
+    "crops_generated": true,
     "db_imported": true
   },
   "e_mat_23okt_ut.pdf": {
@@ -586,12 +536,7 @@
       "skipped_pages": 13,
       "ocr_used": false
     },
-    "formulas_processed": true,
-    "formula_processing": {
-      "formulas": 1,
-      "updated": 5,
-      "ok": true
-    },
+    "crops_generated": true,
     "db_imported": true
   },
   "k_mat_23maj_ut.pdf": {
@@ -642,12 +587,7 @@
       "skipped_pages": 15,
       "ocr_used": false
     },
-    "formulas_processed": true,
-    "formula_processing": {
-      "formulas": 2,
-      "updated": 1,
-      "ok": true
-    },
+    "crops_generated": true,
     "db_imported": true
   },
   "e_mat_23maj_ut.pdf": {
@@ -698,12 +638,7 @@
       "skipped_pages": 13,
       "ocr_used": false
     },
-    "formulas_processed": true,
-    "formula_processing": {
-      "formulas": 1,
-      "updated": 2,
-      "ok": true
-    },
+    "crops_generated": true,
     "db_imported": true
   },
   "k_mat_22okt_ut.pdf": {
@@ -754,12 +689,7 @@
       "skipped_pages": 15,
       "ocr_used": false
     },
-    "formulas_processed": true,
-    "formula_processing": {
-      "formulas": 2,
-      "updated": 1,
-      "ok": true
-    },
+    "crops_generated": true,
     "db_imported": true
   },
   "e_mat_22okt_ut.pdf": {
@@ -810,12 +740,7 @@
       "skipped_pages": 13,
       "ocr_used": false
     },
-    "formulas_processed": true,
-    "formula_processing": {
-      "formulas": 1,
-      "updated": 3,
-      "ok": true
-    },
+    "crops_generated": true,
     "db_imported": true
   },
   "k_mat_22maj_ut.pdf": {
@@ -866,12 +791,7 @@
       "skipped_pages": 15,
       "ocr_used": false
     },
-    "formulas_processed": true,
-    "formula_processing": {
-      "formulas": 3,
-      "updated": 1,
-      "ok": true
-    },
+    "crops_generated": true,
     "db_imported": true
   },
   "e_mat_22maj_ut.pdf": {
@@ -922,12 +842,7 @@
       "skipped_pages": 13,
       "ocr_used": false
     },
-    "formulas_processed": true,
-    "formula_processing": {
-      "formulas": 1,
-      "updated": 0,
-      "ok": true
-    },
+    "crops_generated": true,
     "db_imported": true
   },
   "k_mat_21okt_ut.pdf": {
@@ -978,12 +893,7 @@
       "skipped_pages": 15,
       "ocr_used": false
     },
-    "formulas_processed": true,
-    "formula_processing": {
-      "formulas": 2,
-      "updated": 1,
-      "ok": true
-    },
+    "crops_generated": true,
     "db_imported": true
   },
   "e_mat_21okt_ut.pdf": {
@@ -1034,12 +944,7 @@
       "skipped_pages": 13,
       "ocr_used": false
     },
-    "formulas_processed": true,
-    "formula_processing": {
-      "formulas": 2,
-      "updated": 3,
-      "ok": true
-    },
+    "crops_generated": true,
     "db_imported": true
   },
   "k_mat_21maj_ut.pdf": {
@@ -1090,12 +995,7 @@
       "skipped_pages": 15,
       "ocr_used": false
     },
-    "formulas_processed": true,
-    "formula_processing": {
-      "formulas": 2,
-      "updated": 3,
-      "ok": true
-    },
+    "crops_generated": true,
     "db_imported": true
   },
   "e_mat_21maj_ut.pdf": {
@@ -1146,12 +1046,7 @@
       "skipped_pages": 13,
       "ocr_used": false
     },
-    "formulas_processed": true,
-    "formula_processing": {
-      "formulas": 1,
-      "updated": 1,
-      "ok": true
-    },
+    "crops_generated": true,
     "db_imported": true
   },
   "k_mat_20okt_ut.pdf": {
@@ -1202,12 +1097,7 @@
       "skipped_pages": 15,
       "ocr_used": false
     },
-    "formulas_processed": true,
-    "formula_processing": {
-      "formulas": 3,
-      "updated": 2,
-      "ok": true
-    },
+    "crops_generated": true,
     "db_imported": true
   },
   "e_mat_20okt_ut.pdf": {
@@ -1258,12 +1148,7 @@
       "skipped_pages": 13,
       "ocr_used": false
     },
-    "formulas_processed": true,
-    "formula_processing": {
-      "formulas": 1,
-      "updated": 2,
-      "ok": true
-    },
+    "crops_generated": true,
     "db_imported": true
   },
   "k_mat_20maj_ut.pdf": {
@@ -1314,12 +1199,7 @@
       "skipped_pages": 15,
       "ocr_used": false
     },
-    "formulas_processed": true,
-    "formula_processing": {
-      "formulas": 2,
-      "updated": 6,
-      "ok": true
-    },
+    "crops_generated": true,
     "db_imported": true
   },
   "e_mat_20maj_ut.pdf": {
@@ -1370,12 +1250,7 @@
       "skipped_pages": 13,
       "ocr_used": false
     },
-    "formulas_processed": true,
-    "formula_processing": {
-      "formulas": 2,
-      "updated": 2,
-      "ok": true
-    },
+    "crops_generated": true,
     "db_imported": true
   },
   "k_mat_19okt_ut.pdf": {
@@ -1426,12 +1301,7 @@
       "skipped_pages": 15,
       "ocr_used": false
     },
-    "formulas_processed": true,
-    "formula_processing": {
-      "formulas": 4,
-      "updated": 1,
-      "ok": true
-    },
+    "crops_generated": true,
     "db_imported": true
   },
   "e_mat_19okt_ut.pdf": {
@@ -1482,12 +1352,7 @@
       "skipped_pages": 13,
       "ocr_used": false
     },
-    "formulas_processed": true,
-    "formula_processing": {
-      "formulas": 1,
-      "updated": 0,
-      "ok": true
-    },
+    "crops_generated": true,
     "db_imported": true
   },
   "k_mat_19maj_ut.pdf": {
@@ -1538,12 +1403,7 @@
       "skipped_pages": 15,
       "ocr_used": false
     },
-    "formulas_processed": true,
-    "formula_processing": {
-      "formulas": 4,
-      "updated": 2,
-      "ok": true
-    },
+    "crops_generated": true,
     "db_imported": true
   },
   "e_mat_19maj_ut.pdf": {
@@ -1594,12 +1454,7 @@
       "skipped_pages": 13,
       "ocr_used": false
     },
-    "formulas_processed": true,
-    "formula_processing": {
-      "formulas": 1,
-      "updated": 8,
-      "ok": true
-    },
+    "crops_generated": true,
     "db_imported": true
   },
   "k_mat_18okt_ut.pdf": {
@@ -1650,12 +1505,7 @@
       "skipped_pages": 15,
       "ocr_used": false
     },
-    "formulas_processed": true,
-    "formula_processing": {
-      "formulas": 3,
-      "updated": 6,
-      "ok": true
-    },
+    "crops_generated": true,
     "db_imported": true
   },
   "e_mat_18okt_ut.pdf": {
@@ -1706,12 +1556,7 @@
       "skipped_pages": 13,
       "ocr_used": false
     },
-    "formulas_processed": true,
-    "formula_processing": {
-      "formulas": 2,
-      "updated": 6,
-      "ok": true
-    },
+    "crops_generated": true,
     "db_imported": true
   },
   "k_mat_18maj_ut.pdf": {
@@ -1762,12 +1607,7 @@
       "skipped_pages": 15,
       "ocr_used": false
     },
-    "formulas_processed": true,
-    "formula_processing": {
-      "formulas": 1,
-      "updated": 5,
-      "ok": true
-    },
+    "crops_generated": true,
     "db_imported": true
   },
   "e_mat_18maj_ut.pdf": {
@@ -1818,12 +1658,7 @@
       "skipped_pages": 13,
       "ocr_used": false
     },
-    "formulas_processed": true,
-    "formula_processing": {
-      "formulas": 1,
-      "updated": 5,
-      "ok": true
-    },
+    "crops_generated": true,
     "db_imported": true
   },
   "k_mat_17okt_ut.pdf": {
@@ -1874,12 +1709,7 @@
       "skipped_pages": 15,
       "ocr_used": false
     },
-    "formulas_processed": true,
-    "formula_processing": {
-      "formulas": 2,
-      "updated": 4,
-      "ok": true
-    },
+    "crops_generated": true,
     "db_imported": true
   },
   "e_mat_17okt_ut.pdf": {
@@ -1930,12 +1760,7 @@
       "skipped_pages": 13,
       "ocr_used": false
     },
-    "formulas_processed": true,
-    "formula_processing": {
-      "formulas": 1,
-      "updated": 9,
-      "ok": true
-    },
+    "crops_generated": true,
     "db_imported": true
   },
   "k_mat_17maj_ut.pdf": {
@@ -1986,12 +1811,7 @@
       "skipped_pages": 15,
       "ocr_used": false
     },
-    "formulas_processed": true,
-    "formula_processing": {
-      "formulas": 2,
-      "updated": 8,
-      "ok": true
-    },
+    "crops_generated": true,
     "db_imported": true
   },
   "e_mat_17maj_ut.pdf": {
@@ -2042,12 +1862,7 @@
       "skipped_pages": 15,
       "ocr_used": false
     },
-    "formulas_processed": true,
-    "formula_processing": {
-      "formulas": 1,
-      "updated": 6,
-      "ok": true
-    },
+    "crops_generated": true,
     "db_imported": true
   },
   "e_mat_16okt_ut.pdf": {
@@ -2098,12 +1913,7 @@
       "skipped_pages": 13,
       "ocr_used": false
     },
-    "formulas_processed": true,
-    "formula_processing": {
-      "formulas": 0,
-      "updated": 9,
-      "ok": true
-    },
+    "crops_generated": true,
     "db_imported": true
   },
   "k_mat_16okt_ut.pdf": {
@@ -2154,12 +1964,7 @@
       "skipped_pages": 13,
       "ocr_used": false
     },
-    "formulas_processed": true,
-    "formula_processing": {
-      "formulas": 0,
-      "updated": 2,
-      "ok": true
-    },
+    "crops_generated": true,
     "db_imported": true
   },
   "k_mat_16maj_ut.pdf": {
@@ -2210,12 +2015,7 @@
       "skipped_pages": 15,
       "ocr_used": false
     },
-    "formulas_processed": true,
-    "formula_processing": {
-      "formulas": 0,
-      "updated": 1,
-      "ok": true
-    },
+    "crops_generated": true,
     "db_imported": true
   },
   "e_mat_16maj_ut.pdf": {
@@ -2266,12 +2066,7 @@
       "skipped_pages": 15,
       "ocr_used": false
     },
-    "formulas_processed": true,
-    "formula_processing": {
-      "formulas": 3,
-      "updated": 2,
-      "ok": true
-    },
+    "crops_generated": true,
     "db_imported": true
   },
   "e_mat_15okt_ut.pdf": {
@@ -2322,12 +2117,7 @@
       "skipped_pages": 13,
       "ocr_used": false
     },
-    "formulas_processed": true,
-    "formula_processing": {
-      "formulas": 0,
-      "updated": 0,
-      "ok": true
-    },
+    "crops_generated": true,
     "db_imported": true
   },
   "k_mat_15okt_ut.pdf": {
@@ -2378,12 +2168,7 @@
       "skipped_pages": 13,
       "ocr_used": false
     },
-    "formulas_processed": true,
-    "formula_processing": {
-      "formulas": 0,
-      "updated": 1,
-      "ok": true
-    },
+    "crops_generated": true,
     "db_imported": true
   },
   "k_mat_15maj_ut.pdf": {
@@ -2434,12 +2219,7 @@
       "skipped_pages": 15,
       "ocr_used": false
     },
-    "formulas_processed": true,
-    "formula_processing": {
-      "formulas": 0,
-      "updated": 0,
-      "ok": true
-    },
+    "crops_generated": true,
     "db_imported": true
   },
   "e_mat_15maj_ut.pdf": {
@@ -2490,12 +2270,7 @@
       "skipped_pages": 13,
       "ocr_used": false
     },
-    "formulas_processed": true,
-    "formula_processing": {
-      "formulas": 0,
-      "updated": 3,
-      "ok": true
-    },
+    "crops_generated": true,
     "db_imported": true
   },
   "k_mat_14okt_ut.pdf": {
@@ -2546,12 +2321,7 @@
       "skipped_pages": 15,
       "ocr_used": false
     },
-    "formulas_processed": true,
-    "formula_processing": {
-      "formulas": 0,
-      "updated": 0,
-      "ok": true
-    },
+    "crops_generated": true,
     "db_imported": true
   },
   "e_mat_14okt_ut.pdf": {
@@ -2602,12 +2372,7 @@
       "skipped_pages": 13,
       "ocr_used": false
     },
-    "formulas_processed": true,
-    "formula_processing": {
-      "formulas": 2,
-      "updated": 2,
-      "ok": true
-    },
+    "crops_generated": true,
     "db_imported": true
   },
   "k_mat_14maj_ut.pdf": {
@@ -2658,12 +2423,7 @@
       "skipped_pages": 15,
       "ocr_used": false
     },
-    "formulas_processed": true,
-    "formula_processing": {
-      "formulas": 1,
-      "updated": 1,
-      "ok": true
-    },
+    "crops_generated": true,
     "db_imported": true
   },
   "e_mat_14maj_ut.pdf": {
@@ -2714,12 +2474,7 @@
       "skipped_pages": 13,
       "ocr_used": false
     },
-    "formulas_processed": true,
-    "formula_processing": {
-      "formulas": 0,
-      "updated": 0,
-      "ok": true
-    },
+    "crops_generated": true,
     "db_imported": true
   },
   "k_mat_13okt_ut.pdf": {
@@ -2770,12 +2525,7 @@
       "skipped_pages": 15,
       "ocr_used": false
     },
-    "formulas_processed": true,
-    "formula_processing": {
-      "formulas": 0,
-      "updated": 0,
-      "ok": true
-    },
+    "crops_generated": true,
     "db_imported": true
   },
   "e_mat_13okt_ut.pdf": {
@@ -2826,12 +2576,7 @@
       "skipped_pages": 13,
       "ocr_used": false
     },
-    "formulas_processed": true,
-    "formula_processing": {
-      "formulas": 0,
-      "updated": 0,
-      "ok": true
-    },
+    "crops_generated": true,
     "db_imported": true
   },
   "k_mat_13maj_ut.pdf": {
@@ -2882,12 +2627,7 @@
       "skipped_pages": 15,
       "ocr_used": false
     },
-    "formulas_processed": true,
-    "formula_processing": {
-      "formulas": 0,
-      "updated": 0,
-      "ok": true
-    },
+    "crops_generated": true,
     "db_imported": true
   },
   "e_mat_13maj_ut.pdf": {
@@ -2938,12 +2678,7 @@
       "skipped_pages": 13,
       "ocr_used": false
     },
-    "formulas_processed": true,
-    "formula_processing": {
-      "formulas": 0,
-      "updated": 0,
-      "ok": true
-    },
+    "crops_generated": true,
     "db_imported": true
   },
   "k_mat_12okt_ut.pdf": {
@@ -2994,12 +2729,7 @@
       "skipped_pages": 15,
       "ocr_used": false
     },
-    "formulas_processed": true,
-    "formula_processing": {
-      "formulas": 0,
-      "updated": 0,
-      "ok": true
-    },
+    "crops_generated": true,
     "db_imported": true
   },
   "e_mat_12okt_ut.pdf": {
@@ -3050,12 +2780,7 @@
       "skipped_pages": 13,
       "ocr_used": false
     },
-    "formulas_processed": true,
-    "formula_processing": {
-      "formulas": 0,
-      "updated": 0,
-      "ok": true
-    },
+    "crops_generated": true,
     "db_imported": true
   },
   "k_mat_12maj_ut.pdf": {
@@ -3106,12 +2831,7 @@
       "skipped_pages": 15,
       "ocr_used": false
     },
-    "formulas_processed": true,
-    "formula_processing": {
-      "formulas": 0,
-      "updated": 0,
-      "ok": true
-    },
+    "crops_generated": true,
     "db_imported": true
   },
   "e_mat_12maj_ut.pdf": {
@@ -3162,12 +2882,7 @@
       "skipped_pages": 14,
       "ocr_used": false
     },
-    "formulas_processed": true,
-    "formula_processing": {
-      "formulas": 0,
-      "updated": 0,
-      "ok": true
-    },
+    "crops_generated": true,
     "db_imported": true
   },
   "k_mat_11maj_ut.pdf": {
@@ -3218,12 +2933,7 @@
       "skipped_pages": 15,
       "ocr_used": false
     },
-    "formulas_processed": true,
-    "formula_processing": {
-      "formulas": 0,
-      "updated": 0,
-      "ok": true
-    },
+    "crops_generated": true,
     "db_imported": true
   },
   "e_mat_11maj_ut.pdf": {
@@ -3274,12 +2984,7 @@
       "skipped_pages": 13,
       "ocr_used": false
     },
-    "formulas_processed": true,
-    "formula_processing": {
-      "formulas": 0,
-      "updated": 0,
-      "ok": true
-    },
+    "crops_generated": true,
     "db_imported": true
   },
   "k_mat_10okt_ut.pdf": {
@@ -3330,12 +3035,7 @@
       "skipped_pages": 15,
       "ocr_used": false
     },
-    "formulas_processed": true,
-    "formula_processing": {
-      "formulas": 0,
-      "updated": 0,
-      "ok": true
-    },
+    "crops_generated": true,
     "db_imported": true
   },
   "e_mat_10okt_ut.pdf": {
@@ -3386,12 +3086,7 @@
       "skipped_pages": 13,
       "ocr_used": false
     },
-    "formulas_processed": true,
-    "formula_processing": {
-      "formulas": 0,
-      "updated": 0,
-      "ok": true
-    },
+    "crops_generated": true,
     "db_imported": true
   },
   "k_mat_10maj_ut.pdf": {
@@ -3442,12 +3137,7 @@
       "skipped_pages": 15,
       "ocr_used": false
     },
-    "formulas_processed": true,
-    "formula_processing": {
-      "formulas": 0,
-      "updated": 0,
-      "ok": true
-    },
+    "crops_generated": true,
     "db_imported": true
   },
   "e_mat_10maj_ut.pdf": {
@@ -3498,12 +3188,7 @@
       "skipped_pages": 13,
       "ocr_used": false
     },
-    "formulas_processed": true,
-    "formula_processing": {
-      "formulas": 0,
-      "updated": 0,
-      "ok": true
-    },
+    "crops_generated": true,
     "db_imported": true
   },
   "k_mat_09okt_ut.pdf": {
@@ -3554,12 +3239,7 @@
       "skipped_pages": 15,
       "ocr_used": false
     },
-    "formulas_processed": true,
-    "formula_processing": {
-      "formulas": 0,
-      "updated": 0,
-      "ok": true
-    },
+    "crops_generated": true,
     "db_imported": true
   },
   "e_mat_09okt_ut.pdf": {
@@ -3610,12 +3290,7 @@
       "skipped_pages": 13,
       "ocr_used": false
     },
-    "formulas_processed": true,
-    "formula_processing": {
-      "formulas": 0,
-      "updated": 0,
-      "ok": true
-    },
+    "crops_generated": true,
     "db_imported": true
   },
   "k_mat_09maj_ut.pdf": {
@@ -3666,12 +3341,7 @@
       "skipped_pages": 15,
       "ocr_used": false
     },
-    "formulas_processed": true,
-    "formula_processing": {
-      "formulas": 0,
-      "updated": 0,
-      "ok": true
-    },
+    "crops_generated": true,
     "db_imported": true
   },
   "e_mat_09maj_ut.pdf": {
@@ -3722,12 +3392,7 @@
       "skipped_pages": 17,
       "ocr_used": false
     },
-    "formulas_processed": true,
-    "formula_processing": {
-      "formulas": 0,
-      "updated": 0,
-      "ok": true
-    },
+    "crops_generated": true,
     "db_imported": true
   },
   "k_mat_08okt_ut.pdf": {
@@ -3778,12 +3443,7 @@
       "skipped_pages": 15,
       "ocr_used": false
     },
-    "formulas_processed": true,
-    "formula_processing": {
-      "formulas": 0,
-      "updated": 0,
-      "ok": true
-    },
+    "crops_generated": true,
     "db_imported": true
   },
   "e_mat_08okt_ut.pdf": {
@@ -3834,12 +3494,7 @@
       "skipped_pages": 13,
       "ocr_used": false
     },
-    "formulas_processed": true,
-    "formula_processing": {
-      "formulas": 0,
-      "updated": 0,
-      "ok": true
-    },
+    "crops_generated": true,
     "db_imported": true
   },
   "k_mat_08maj_ut.pdf": {
@@ -3890,12 +3545,7 @@
       "skipped_pages": 15,
       "ocr_used": false
     },
-    "formulas_processed": true,
-    "formula_processing": {
-      "formulas": 0,
-      "updated": 0,
-      "ok": true
-    },
+    "crops_generated": true,
     "db_imported": true
   },
   "e_mat_08maj_ut.pdf": {
@@ -3946,12 +3596,7 @@
       "skipped_pages": 13,
       "ocr_used": false
     },
-    "formulas_processed": true,
-    "formula_processing": {
-      "formulas": 0,
-      "updated": 0,
-      "ok": true
-    },
+    "crops_generated": true,
     "db_imported": true
   },
   "k_mat_07okt_ut.pdf": {
@@ -4002,12 +3647,7 @@
       "skipped_pages": 15,
       "ocr_used": false
     },
-    "formulas_processed": true,
-    "formula_processing": {
-      "formulas": 0,
-      "updated": 0,
-      "ok": true
-    },
+    "crops_generated": true,
     "db_imported": true
   },
   "e_mat_07okt_ut.pdf": {
@@ -4058,12 +3698,7 @@
       "skipped_pages": 17,
       "ocr_used": false
     },
-    "formulas_processed": true,
-    "formula_processing": {
-      "formulas": 0,
-      "updated": 0,
-      "ok": true
-    },
+    "crops_generated": true,
     "db_imported": true
   },
   "k_mat_07maj_ut.pdf": {
@@ -4114,12 +3749,7 @@
       "skipped_pages": 19,
       "ocr_used": false
     },
-    "formulas_processed": true,
-    "formula_processing": {
-      "formulas": 0,
-      "updated": 0,
-      "ok": true
-    },
+    "crops_generated": true,
     "db_imported": true
   },
   "e_mat_06okt_ut.pdf": {
@@ -4170,12 +3800,7 @@
       "skipped_pages": 13,
       "ocr_used": false
     },
-    "formulas_processed": true,
-    "formula_processing": {
-      "formulas": 0,
-      "updated": 0,
-      "ok": true
-    },
+    "crops_generated": true,
     "db_imported": true
   },
   "k_mat_06febr_ut.pdf": {
@@ -4226,12 +3851,7 @@
       "skipped_pages": 15,
       "ocr_used": false
     },
-    "formulas_processed": true,
-    "formula_processing": {
-      "formulas": 1,
-      "updated": 4,
-      "ok": true
-    },
+    "crops_generated": true,
     "db_imported": true
   },
   "e_mat_06febr_ut.pdf": {
@@ -4282,12 +3902,7 @@
       "skipped_pages": 11,
       "ocr_used": true
     },
-    "formulas_processed": true,
-    "formula_processing": {
-      "formulas": 1,
-      "updated": 1,
-      "ok": true
-    },
+    "crops_generated": true,
     "db_imported": true
   },
   "e_mat_05okt_ut.pdf": {
@@ -4339,12 +3954,7 @@
       "skipped_pages": 13,
       "ocr_used": false
     },
-    "formulas_processed": true,
-    "formula_processing": {
-      "formulas": 1,
-      "updated": 12,
-      "ok": true
-    },
+    "crops_generated": true,
     "db_imported": true
   },
   "k_matma_25maj_ut.pdf": {
@@ -4397,12 +4007,7 @@
       "skipped_pages": 15,
       "ocr_used": false
     },
-    "formulas_processed": true,
-    "formula_processing": {
-      "formulas": 2,
-      "updated": 9,
-      "ok": true
-    },
+    "crops_generated": true,
     "db_imported": true
   },
   "e_matma_25maj_ut.pdf": {
@@ -4455,12 +4060,7 @@
       "skipped_pages": 13,
       "ocr_used": false
     },
-    "formulas_processed": true,
-    "formula_processing": {
-      "formulas": 2,
-      "updated": 9,
-      "ok": true
-    },
+    "crops_generated": true,
     "db_imported": true
   },
   "k_matma_24maj_ut.pdf": {
@@ -4513,12 +4113,7 @@
       "skipped_pages": 15,
       "ocr_used": false
     },
-    "formulas_processed": true,
-    "formula_processing": {
-      "formulas": 2,
-      "updated": 11,
-      "ok": true
-    },
+    "crops_generated": true,
     "db_imported": true
   },
   "e_matma_24maj_ut.pdf": {
@@ -4571,12 +4166,7 @@
       "skipped_pages": 13,
       "ocr_used": false
     },
-    "formulas_processed": true,
-    "formula_processing": {
-      "formulas": 1,
-      "updated": 0,
-      "ok": true
-    },
+    "crops_generated": true,
     "db_imported": true
   },
   "k_matma_23maj_ut.pdf": {
@@ -4629,12 +4219,7 @@
       "skipped_pages": 15,
       "ocr_used": false
     },
-    "formulas_processed": true,
-    "formula_processing": {
-      "formulas": 1,
-      "updated": 4,
-      "ok": true
-    },
+    "crops_generated": true,
     "db_imported": true
   },
   "e_matma_23maj_ut.pdf": {
@@ -4687,12 +4272,7 @@
       "skipped_pages": 13,
       "ocr_used": false
     },
-    "formulas_processed": true,
-    "formula_processing": {
-      "formulas": 1,
-      "updated": 2,
-      "ok": true
-    },
+    "crops_generated": true,
     "db_imported": true
   },
   "k_matma_22maj_ut.pdf": {
@@ -4745,12 +4325,7 @@
       "skipped_pages": 15,
       "ocr_used": false
     },
-    "formulas_processed": true,
-    "formula_processing": {
-      "formulas": 1,
-      "updated": 0,
-      "ok": true
-    },
+    "crops_generated": true,
     "db_imported": true
   },
   "e_matma_22maj_ut.pdf": {
@@ -4803,12 +4378,7 @@
       "skipped_pages": 13,
       "ocr_used": false
     },
-    "formulas_processed": true,
-    "formula_processing": {
-      "formulas": 1,
-      "updated": 0,
-      "ok": true
-    },
+    "crops_generated": true,
     "db_imported": true
   },
   "k_matma_21maj_ut.pdf": {
@@ -4861,12 +4431,7 @@
       "skipped_pages": 15,
       "ocr_used": false
     },
-    "formulas_processed": true,
-    "formula_processing": {
-      "formulas": 1,
-      "updated": 0,
-      "ok": true
-    },
+    "crops_generated": true,
     "db_imported": true
   },
   "e_matma_21maj_ut.pdf": {
@@ -4919,12 +4484,7 @@
       "skipped_pages": 13,
       "ocr_used": false
     },
-    "formulas_processed": true,
-    "formula_processing": {
-      "formulas": 1,
-      "updated": 3,
-      "ok": true
-    },
+    "crops_generated": true,
     "db_imported": true
   },
   "k_matma_20maj_ut.pdf": {
@@ -4977,12 +4537,7 @@
       "skipped_pages": 15,
       "ocr_used": false
     },
-    "formulas_processed": true,
-    "formula_processing": {
-      "formulas": 1,
-      "updated": 0,
-      "ok": true
-    },
+    "crops_generated": true,
     "db_imported": true
   },
   "e_matma_20maj_ut.pdf": {
@@ -5035,12 +4590,7 @@
       "skipped_pages": 13,
       "ocr_used": false
     },
-    "formulas_processed": true,
-    "formula_processing": {
-      "formulas": 1,
-      "updated": 4,
-      "ok": true
-    },
+    "crops_generated": true,
     "db_imported": true
   },
   "k_matma_19maj_ut.pdf": {
@@ -5093,12 +4643,7 @@
       "skipped_pages": 15,
       "ocr_used": false
     },
-    "formulas_processed": true,
-    "formula_processing": {
-      "formulas": 1,
-      "updated": 0,
-      "ok": true
-    },
+    "crops_generated": true,
     "db_imported": true
   },
   "e_matma_19maj_ut.pdf": {
@@ -5151,12 +4696,7 @@
       "skipped_pages": 13,
       "ocr_used": false
     },
-    "formulas_processed": true,
-    "formula_processing": {
-      "formulas": 1,
-      "updated": 6,
-      "ok": true
-    },
+    "crops_generated": true,
     "db_imported": true
   },
   "k_matma_18maj_ut.pdf": {
@@ -5209,12 +4749,7 @@
       "skipped_pages": 15,
       "ocr_used": false
     },
-    "formulas_processed": true,
-    "formula_processing": {
-      "formulas": 3,
-      "updated": 7,
-      "ok": true
-    },
+    "crops_generated": true,
     "db_imported": true
   },
   "e_matma_18maj_ut.pdf": {
@@ -5267,12 +4802,7 @@
       "skipped_pages": 13,
       "ocr_used": false
     },
-    "formulas_processed": true,
-    "formula_processing": {
-      "formulas": 5,
-      "updated": 14,
-      "ok": true
-    },
+    "crops_generated": true,
     "db_imported": true
   },
   "k_matma_17maj_ut.pdf": {
@@ -5325,12 +4855,7 @@
       "skipped_pages": 15,
       "ocr_used": false
     },
-    "formulas_processed": true,
-    "formula_processing": {
-      "formulas": 1,
-      "updated": 6,
-      "ok": true
-    },
+    "crops_generated": true,
     "db_imported": true
   },
   "e_matma_17maj_ut.pdf": {
@@ -5383,12 +4908,7 @@
       "skipped_pages": 13,
       "ocr_used": false
     },
-    "formulas_processed": true,
-    "formula_processing": {
-      "formulas": 0,
-      "updated": 6,
-      "ok": true
-    },
+    "crops_generated": true,
     "db_imported": true
   },
   "k_matma_16maj_ut.pdf": {
@@ -5441,12 +4961,7 @@
       "skipped_pages": 15,
       "ocr_used": false
     },
-    "formulas_processed": true,
-    "formula_processing": {
-      "formulas": 0,
-      "updated": 7,
-      "ok": true
-    },
+    "crops_generated": true,
     "db_imported": true
   },
   "e_matma_16maj_ut.pdf": {
@@ -5499,12 +5014,7 @@
       "skipped_pages": 13,
       "ocr_used": false
     },
-    "formulas_processed": true,
-    "formula_processing": {
-      "formulas": 0,
-      "updated": 2,
-      "ok": true
-    },
+    "crops_generated": true,
     "db_imported": true
   },
   "k_matma_15maj_ut.pdf": {
@@ -5557,12 +5067,7 @@
       "skipped_pages": 15,
       "ocr_used": false
     },
-    "formulas_processed": true,
-    "formula_processing": {
-      "formulas": 0,
-      "updated": 0,
-      "ok": true
-    },
+    "crops_generated": true,
     "db_imported": true
   },
   "e_matma_15maj_ut.pdf": {
@@ -5615,12 +5120,7 @@
       "skipped_pages": 13,
       "ocr_used": false
     },
-    "formulas_processed": true,
-    "formula_processing": {
-      "formulas": 0,
-      "updated": 3,
-      "ok": true
-    },
+    "crops_generated": true,
     "db_imported": true
   },
   "k_matma_14maj_ut.pdf": {
@@ -5673,12 +5173,7 @@
       "skipped_pages": 15,
       "ocr_used": false
     },
-    "formulas_processed": true,
-    "formula_processing": {
-      "formulas": 2,
-      "updated": 2,
-      "ok": true
-    },
+    "crops_generated": true,
     "db_imported": true
   },
   "e_matma_14maj_ut.pdf": {
@@ -5731,12 +5226,7 @@
       "skipped_pages": 17,
       "ocr_used": false
     },
-    "formulas_processed": true,
-    "formula_processing": {
-      "formulas": 0,
-      "updated": 0,
-      "ok": true
-    },
+    "crops_generated": true,
     "db_imported": true
   },
   "k_matma_13maj_ut.pdf": {
@@ -5789,12 +5279,7 @@
       "skipped_pages": 15,
       "ocr_used": false
     },
-    "formulas_processed": true,
-    "formula_processing": {
-      "formulas": 0,
-      "updated": 0,
-      "ok": true
-    },
+    "crops_generated": true,
     "db_imported": true
   },
   "e_matma_13maj_ut.pdf": {
@@ -5847,12 +5332,7 @@
       "skipped_pages": 13,
       "ocr_used": false
     },
-    "formulas_processed": true,
-    "formula_processing": {
-      "formulas": 0,
-      "updated": 0,
-      "ok": true
-    },
+    "crops_generated": true,
     "db_imported": true
   },
   "k_matma_12maj_ut.pdf": {
@@ -5905,12 +5385,7 @@
       "skipped_pages": 15,
       "ocr_used": false
     },
-    "formulas_processed": true,
-    "formula_processing": {
-      "formulas": 0,
-      "updated": 0,
-      "ok": true
-    },
+    "crops_generated": true,
     "db_imported": true
   },
   "e_matma_12maj_ut.pdf": {
@@ -5963,12 +5438,7 @@
       "skipped_pages": 13,
       "ocr_used": false
     },
-    "formulas_processed": true,
-    "formula_processing": {
-      "formulas": 0,
-      "updated": 0,
-      "ok": true
-    },
+    "crops_generated": true,
     "db_imported": true
   },
   "k_matma_11maj_ut.pdf": {
@@ -6021,12 +5491,7 @@
       "skipped_pages": 15,
       "ocr_used": false
     },
-    "formulas_processed": true,
-    "formula_processing": {
-      "formulas": 0,
-      "updated": 0,
-      "ok": true
-    },
+    "crops_generated": true,
     "db_imported": true
   },
   "e_matma_11maj_ut.pdf": {
@@ -6079,12 +5544,7 @@
       "skipped_pages": 18,
       "ocr_used": false
     },
-    "formulas_processed": true,
-    "formula_processing": {
-      "formulas": 0,
-      "updated": 0,
-      "ok": true
-    },
+    "crops_generated": true,
     "db_imported": true
   },
   "k_matma_10maj_ut.pdf": {
@@ -6137,12 +5597,7 @@
       "skipped_pages": 15,
       "ocr_used": false
     },
-    "formulas_processed": true,
-    "formula_processing": {
-      "formulas": 0,
-      "updated": 0,
-      "ok": true
-    },
+    "crops_generated": true,
     "db_imported": true
   },
   "e_matma_10maj_ut.pdf": {
