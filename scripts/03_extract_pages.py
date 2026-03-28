@@ -118,6 +118,20 @@ def _ocr_page(page: fitz.Page, log: Callable) -> list[dict]:
         log("    [OCR] pytesseract/Pillow not installed — skipping OCR for this page.")
         return []
 
+    # Point pytesseract at the Tesseract executable if it's not on PATH
+    _TESSERACT_CANDIDATES = [
+        r"C:\Users\aronf\AppData\Local\Programs\Tesseract-OCR\tesseract.exe",
+        r"C:\Program Files\Tesseract-OCR\tesseract.exe",
+        r"C:\Program Files (x86)\Tesseract-OCR\tesseract.exe",
+    ]
+    if not pytesseract.pytesseract.tesseract_cmd or pytesseract.pytesseract.tesseract_cmd == "tesseract":
+        import shutil
+        if not shutil.which("tesseract"):
+            for candidate in _TESSERACT_CANDIDATES:
+                if Path(candidate).exists():
+                    pytesseract.pytesseract.tesseract_cmd = candidate
+                    break
+
     mat = fitz.Matrix(OCR_DPI_SCALE, OCR_DPI_SCALE)
     pix = page.get_pixmap(matrix=mat, colorspace=fitz.csRGB)
     img = Image.open(io.BytesIO(pix.tobytes("png")))
