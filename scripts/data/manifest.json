@@ -18,6 +18,13 @@
       "ocr_used": false,
       "ocr_pages": 0,
       "out_dir": "scripts\\data\\extracted\\k_mat_25okt_fl"
+    },
+    "segmented": true,
+    "segmentation": {
+      "problems": 18,
+      "sub_parts": 32,
+      "skipped_pages": 13,
+      "ocr_used": false
     }
   },
   "k_mat_25okt_ut.pdf": {
@@ -60,6 +67,13 @@
       "ocr_used": false,
       "ocr_pages": 0,
       "out_dir": "scripts\\data\\extracted\\k_mat_25maj_fl"
+    },
+    "segmented": true,
+    "segmentation": {
+      "problems": 18,
+      "sub_parts": 27,
+      "skipped_pages": 13,
+      "ocr_used": false
     }
   },
   "k_mat_25maj_ut.pdf": {
@@ -102,6 +116,13 @@
       "ocr_used": false,
       "ocr_pages": 0,
       "out_dir": "scripts\\data\\extracted\\e_mat_25okt_fl"
+    },
+    "segmented": true,
+    "segmentation": {
+      "problems": 9,
+      "sub_parts": 27,
+      "skipped_pages": 15,
+      "ocr_used": false
     }
   },
   "e_mat_25okt_ut.pdf": {
@@ -144,6 +165,13 @@
       "ocr_used": false,
       "ocr_pages": 0,
       "out_dir": "scripts\\data\\extracted\\e_mat_25maj_fl"
+    },
+    "segmented": true,
+    "segmentation": {
+      "problems": 9,
+      "sub_parts": 20,
+      "skipped_pages": 15,
+      "ocr_used": false
     }
   },
   "e_mat_25maj_ut.pdf": {
@@ -186,6 +214,13 @@
       "ocr_used": false,
       "ocr_pages": 0,
       "out_dir": "scripts\\data\\extracted\\k_mat_24okt_fl"
+    },
+    "segmented": true,
+    "segmentation": {
+      "problems": 18,
+      "sub_parts": 35,
+      "skipped_pages": 13,
+      "ocr_used": false
     }
   },
   "k_mat_24okt_ut.pdf": {
@@ -228,6 +263,13 @@
       "ocr_used": false,
       "ocr_pages": 0,
       "out_dir": "scripts\\data\\extracted\\e_mat_24okt_fl"
+    },
+    "segmented": true,
+    "segmentation": {
+      "problems": 9,
+      "sub_parts": 25,
+      "skipped_pages": 15,
+      "ocr_used": false
     }
   },
   "e_mat_24okt_ut.pdf": {
@@ -270,6 +312,13 @@
       "ocr_used": false,
       "ocr_pages": 0,
       "out_dir": "scripts\\data\\extracted\\k_mat_24maj_fl"
+    },
+    "segmented": true,
+    "segmentation": {
+      "problems": 18,
+      "sub_parts": 29,
+      "skipped_pages": 13,
+      "ocr_used": false
     }
   },
   "k_mat_24maj_ut.pdf": {
@@ -312,6 +361,13 @@
       "ocr_used": false,
       "ocr_pages": 0,
       "out_dir": "scripts\\data\\extracted\\e_mat_24maj_fl"
+    },
+    "segmented": true,
+    "segmentation": {
+      "problems": 9,
+      "sub_parts": 24,
+      "skipped_pages": 15,
+      "ocr_used": false
     }
   },
   "e_mat_24maj_ut.pdf": {
@@ -354,6 +410,13 @@
       "ocr_used": false,
       "ocr_pages": 0,
       "out_dir": "scripts\\data\\extracted\\k_mat_23okt_fl"
+    },
+    "segmented": true,
+    "segmentation": {
+      "problems": 18,
+      "sub_parts": 24,
+      "skipped_pages": 13,
+      "ocr_used": false
     }
   },
   "k_mat_23okt_ut.pdf": {
@@ -396,6 +459,13 @@
       "ocr_used": false,
       "ocr_pages": 0,
       "out_dir": "scripts\\data\\extracted\\e_mat_23okt_fl"
+    },
+    "segmented": true,
+    "segmentation": {
+      "problems": 9,
+      "sub_parts": 9,
+      "skipped_pages": 15,
+      "ocr_used": false
     }
   },
   "e_mat_23okt_ut.pdf": {
@@ -438,6 +508,13 @@
       "ocr_used": false,
       "ocr_pages": 0,
       "out_dir": "scripts\\data\\extracted\\k_mat_23maj_fl"
+    },
+    "segmented": true,
+    "segmentation": {
+      "problems": 18,
+      "sub_parts": 34,
+      "skipped_pages": 13,
+      "ocr_used": false
     }
   },
   "k_mat_23maj_ut.pdf": {
@@ -480,6 +557,13 @@
       "ocr_used": false,
       "ocr_pages": 0,
       "out_dir": "scripts\\data\\extracted\\e_mat_23maj_fl"
+    },
+    "segmented": true,
+    "segmentation": {
+      "problems": 9,
+      "sub_parts": 19,
+      "skipped_pages": 15,
+      "ocr_used": false
     }
   },
   "e_mat_23maj_ut.pdf": {
@@ -522,6 +606,13 @@
       "ocr_used": false,
       "ocr_pages": 0,
       "out_dir": "scripts\\data\\extracted\\k_mat_22okt_fl"
+    },
+    "segmented": true,
+    "segmentation": {
+      "problems": 18,
+      "sub_parts": 29,
+      "skipped_pages": 13,
+      "ocr_used": false
     }
   },
   "k_mat_22okt_ut.pdf": {
@@ -564,6 +655,13 @@
       "ocr_used": false,
       "ocr_pages": 0,
       "out_dir": "scripts\\data\\extracted\\e_mat_22okt_fl"
+    },
+    "segmented": true,
+    "segmentation": {
+      "problems": 9,
+      "sub_parts": 19,
+      "skipped_pages": 15,
+      "ocr_used": false
     }
   },
   "e_mat_22okt_ut.pdf": {
@@ -606,6 +704,13 @@
       "ocr_used": false,
       "ocr_pages": 0,
       "out_dir": "scripts\\data\\extracted\\k_mat_22maj_fl"
+    },
+    "segmented": true,
+    "segmentation": {
+      "problems": 18,
+      "sub_parts": 31,
+      "skipped_pages": 13,
+      "ocr_used": false
     }
   },
   "k_mat_22maj_ut.pdf": {
@@ -648,6 +753,13 @@
       "ocr_used": false,
       "ocr_pages": 0,
       "out_dir": "scripts\\data\\extracted\\e_mat_22maj_fl"
+    },
+    "segmented": true,
+    "segmentation": {
+      "problems": 9,
+      "sub_parts": 21,
+      "skipped_pages": 15,
+      "ocr_used": false
     }
   },
   "e_mat_22maj_ut.pdf": {
@@ -690,6 +802,13 @@
       "ocr_used": false,
       "ocr_pages": 0,
       "out_dir": "scripts\\data\\extracted\\k_mat_21okt_fl"
+    },
+    "segmented": true,
+    "segmentation": {
+      "problems": 18,
+      "sub_parts": 31,
+      "skipped_pages": 13,
+      "ocr_used": false
     }
   },
   "k_mat_21okt_ut.pdf": {
@@ -732,6 +851,13 @@
       "ocr_used": false,
       "ocr_pages": 0,
       "out_dir": "scripts\\data\\extracted\\e_mat_21okt_fl"
+    },
+    "segmented": true,
+    "segmentation": {
+      "problems": 9,
+      "sub_parts": 18,
+      "skipped_pages": 15,
+      "ocr_used": false
     }
   },
   "e_mat_21okt_ut.pdf": {
@@ -774,6 +900,13 @@
       "ocr_used": false,
       "ocr_pages": 0,
       "out_dir": "scripts\\data\\extracted\\k_mat_21maj_fl"
+    },
+    "segmented": true,
+    "segmentation": {
+      "problems": 18,
+      "sub_parts": 31,
+      "skipped_pages": 13,
+      "ocr_used": false
     }
   },
   "k_mat_21maj_ut.pdf": {
@@ -816,6 +949,13 @@
       "ocr_used": false,
       "ocr_pages": 0,
       "out_dir": "scripts\\data\\extracted\\e_mat_21maj_fl"
+    },
+    "segmented": true,
+    "segmentation": {
+      "problems": 9,
+      "sub_parts": 21,
+      "skipped_pages": 15,
+      "ocr_used": false
     }
   },
   "e_mat_21maj_ut.pdf": {
@@ -858,6 +998,13 @@
       "ocr_used": false,
       "ocr_pages": 0,
       "out_dir": "scripts\\data\\extracted\\k_mat_20okt_fl"
+    },
+    "segmented": true,
+    "segmentation": {
+      "problems": 18,
+      "sub_parts": 32,
+      "skipped_pages": 13,
+      "ocr_used": false
     }
   },
   "k_mat_20okt_ut.pdf": {
@@ -900,6 +1047,13 @@
       "ocr_used": false,
       "ocr_pages": 0,
       "out_dir": "scripts\\data\\extracted\\e_mat_20okt_fl"
+    },
+    "segmented": true,
+    "segmentation": {
+      "problems": 9,
+      "sub_parts": 20,
+      "skipped_pages": 15,
+      "ocr_used": false
     }
   },
   "e_mat_20okt_ut.pdf": {
@@ -942,6 +1096,13 @@
       "ocr_used": false,
       "ocr_pages": 0,
       "out_dir": "scripts\\data\\extracted\\k_mat_20maj_fl"
+    },
+    "segmented": true,
+    "segmentation": {
+      "problems": 18,
+      "sub_parts": 32,
+      "skipped_pages": 13,
+      "ocr_used": false
     }
   },
   "k_mat_20maj_ut.pdf": {
@@ -984,6 +1145,13 @@
       "ocr_used": false,
       "ocr_pages": 0,
       "out_dir": "scripts\\data\\extracted\\e_mat_20maj_fl"
+    },
+    "segmented": true,
+    "segmentation": {
+      "problems": 9,
+      "sub_parts": 24,
+      "skipped_pages": 15,
+      "ocr_used": false
     }
   },
   "e_mat_20maj_ut.pdf": {
@@ -1026,6 +1194,13 @@
       "ocr_used": false,
       "ocr_pages": 0,
       "out_dir": "scripts\\data\\extracted\\k_mat_19okt_fl"
+    },
+    "segmented": true,
+    "segmentation": {
+      "problems": 18,
+      "sub_parts": 29,
+      "skipped_pages": 13,
+      "ocr_used": false
     }
   },
   "k_mat_19okt_ut.pdf": {
@@ -1068,6 +1243,13 @@
       "ocr_used": false,
       "ocr_pages": 0,
       "out_dir": "scripts\\data\\extracted\\e_mat_19okt_fl"
+    },
+    "segmented": true,
+    "segmentation": {
+      "problems": 9,
+      "sub_parts": 16,
+      "skipped_pages": 15,
+      "ocr_used": false
     }
   },
   "e_mat_19okt_ut.pdf": {
@@ -1110,6 +1292,13 @@
       "ocr_used": false,
       "ocr_pages": 0,
       "out_dir": "scripts\\data\\extracted\\k_mat_19maj_fl"
+    },
+    "segmented": true,
+    "segmentation": {
+      "problems": 18,
+      "sub_parts": 29,
+      "skipped_pages": 13,
+      "ocr_used": false
     }
   },
   "k_mat_19maj_ut.pdf": {
@@ -1152,6 +1341,13 @@
       "ocr_used": false,
       "ocr_pages": 0,
       "out_dir": "scripts\\data\\extracted\\e_mat_19maj_fl"
+    },
+    "segmented": true,
+    "segmentation": {
+      "problems": 9,
+      "sub_parts": 18,
+      "skipped_pages": 15,
+      "ocr_used": false
     }
   },
   "e_mat_19maj_ut.pdf": {
@@ -1194,6 +1390,13 @@
       "ocr_used": false,
       "ocr_pages": 0,
       "out_dir": "scripts\\data\\extracted\\k_mat_18okt_fl"
+    },
+    "segmented": true,
+    "segmentation": {
+      "problems": 18,
+      "sub_parts": 30,
+      "skipped_pages": 13,
+      "ocr_used": false
     }
   },
   "k_mat_18okt_ut.pdf": {
@@ -1236,6 +1439,13 @@
       "ocr_used": false,
       "ocr_pages": 0,
       "out_dir": "scripts\\data\\extracted\\e_mat_18okt_fl"
+    },
+    "segmented": true,
+    "segmentation": {
+      "problems": 9,
+      "sub_parts": 19,
+      "skipped_pages": 15,
+      "ocr_used": false
     }
   },
   "e_mat_18okt_ut.pdf": {
@@ -1278,6 +1488,13 @@
       "ocr_used": false,
       "ocr_pages": 0,
       "out_dir": "scripts\\data\\extracted\\k_mat_18maj_fl"
+    },
+    "segmented": true,
+    "segmentation": {
+      "problems": 18,
+      "sub_parts": 29,
+      "skipped_pages": 13,
+      "ocr_used": false
     }
   },
   "k_mat_18maj_ut.pdf": {
@@ -1320,6 +1537,13 @@
       "ocr_used": false,
       "ocr_pages": 0,
       "out_dir": "scripts\\data\\extracted\\e_mat_18maj_fl"
+    },
+    "segmented": true,
+    "segmentation": {
+      "problems": 9,
+      "sub_parts": 21,
+      "skipped_pages": 15,
+      "ocr_used": false
     }
   },
   "e_mat_18maj_ut.pdf": {
@@ -1362,6 +1586,13 @@
       "ocr_used": false,
       "ocr_pages": 0,
       "out_dir": "scripts\\data\\extracted\\k_mat_17okt_fl"
+    },
+    "segmented": true,
+    "segmentation": {
+      "problems": 18,
+      "sub_parts": 30,
+      "skipped_pages": 13,
+      "ocr_used": false
     }
   },
   "k_mat_17okt_ut.pdf": {
@@ -1404,6 +1635,13 @@
       "ocr_used": false,
       "ocr_pages": 0,
       "out_dir": "scripts\\data\\extracted\\e_mat_17okt_fl"
+    },
+    "segmented": true,
+    "segmentation": {
+      "problems": 9,
+      "sub_parts": 23,
+      "skipped_pages": 15,
+      "ocr_used": false
     }
   },
   "e_mat_17okt_ut.pdf": {
@@ -1446,6 +1684,13 @@
       "ocr_used": false,
       "ocr_pages": 0,
       "out_dir": "scripts\\data\\extracted\\k_mat_17maj_fl"
+    },
+    "segmented": true,
+    "segmentation": {
+      "problems": 18,
+      "sub_parts": 29,
+      "skipped_pages": 13,
+      "ocr_used": false
     }
   },
   "k_mat_17maj_ut.pdf": {
@@ -1488,6 +1733,13 @@
       "ocr_used": false,
       "ocr_pages": 0,
       "out_dir": "scripts\\data\\extracted\\e_mat_17maj_fl"
+    },
+    "segmented": true,
+    "segmentation": {
+      "problems": 9,
+      "sub_parts": 20,
+      "skipped_pages": 15,
+      "ocr_used": false
     }
   },
   "e_mat_17maj_ut.pdf": {
@@ -1530,6 +1782,13 @@
       "ocr_used": false,
       "ocr_pages": 0,
       "out_dir": "scripts\\data\\extracted\\e_mat_16okt_fl"
+    },
+    "segmented": true,
+    "segmentation": {
+      "problems": 9,
+      "sub_parts": 22,
+      "skipped_pages": 15,
+      "ocr_used": false
     }
   },
   "e_mat_16okt_ut.pdf": {
@@ -1572,6 +1831,13 @@
       "ocr_used": false,
       "ocr_pages": 0,
       "out_dir": "scripts\\data\\extracted\\k_mat_16okt_fl"
+    },
+    "segmented": true,
+    "segmentation": {
+      "problems": 18,
+      "sub_parts": 29,
+      "skipped_pages": 13,
+      "ocr_used": false
     }
   },
   "k_mat_16okt_ut.pdf": {
@@ -1614,6 +1880,13 @@
       "ocr_used": false,
       "ocr_pages": 0,
       "out_dir": "scripts\\data\\extracted\\k_mat_16maj_fl"
+    },
+    "segmented": true,
+    "segmentation": {
+      "problems": 18,
+      "sub_parts": 30,
+      "skipped_pages": 13,
+      "ocr_used": false
     }
   },
   "k_mat_16maj_ut.pdf": {
@@ -1656,6 +1929,13 @@
       "ocr_used": false,
       "ocr_pages": 0,
       "out_dir": "scripts\\data\\extracted\\e_mat_16maj_fl"
+    },
+    "segmented": true,
+    "segmentation": {
+      "problems": 9,
+      "sub_parts": 20,
+      "skipped_pages": 15,
+      "ocr_used": false
     }
   },
   "e_mat_16maj_ut.pdf": {
@@ -1698,6 +1978,13 @@
       "ocr_used": false,
       "ocr_pages": 0,
       "out_dir": "scripts\\data\\extracted\\e_mat_15okt_fl"
+    },
+    "segmented": true,
+    "segmentation": {
+      "problems": 9,
+      "sub_parts": 21,
+      "skipped_pages": 15,
+      "ocr_used": false
     }
   },
   "e_mat_15okt_ut.pdf": {
@@ -1740,6 +2027,13 @@
       "ocr_used": false,
       "ocr_pages": 0,
       "out_dir": "scripts\\data\\extracted\\k_mat_15okt_fl"
+    },
+    "segmented": true,
+    "segmentation": {
+      "problems": 18,
+      "sub_parts": 31,
+      "skipped_pages": 13,
+      "ocr_used": false
     }
   },
   "k_mat_15okt_ut.pdf": {
@@ -1782,6 +2076,13 @@
       "ocr_used": false,
       "ocr_pages": 0,
       "out_dir": "scripts\\data\\extracted\\k_mat_15maj_fl"
+    },
+    "segmented": true,
+    "segmentation": {
+      "problems": 18,
+      "sub_parts": 32,
+      "skipped_pages": 13,
+      "ocr_used": false
     }
   },
   "k_mat_15maj_ut.pdf": {
@@ -1824,6 +2125,13 @@
       "ocr_used": false,
       "ocr_pages": 0,
       "out_dir": "scripts\\data\\extracted\\e_mat_15maj_fl"
+    },
+    "segmented": true,
+    "segmentation": {
+      "problems": 9,
+      "sub_parts": 20,
+      "skipped_pages": 15,
+      "ocr_used": false
     }
   },
   "e_mat_15maj_ut.pdf": {
@@ -1866,6 +2174,13 @@
       "ocr_used": false,
       "ocr_pages": 0,
       "out_dir": "scripts\\data\\extracted\\k_mat_14okt_fl"
+    },
+    "segmented": true,
+    "segmentation": {
+      "problems": 18,
+      "sub_parts": 25,
+      "skipped_pages": 13,
+      "ocr_used": false
     }
   },
   "k_mat_14okt_ut.pdf": {
@@ -1908,6 +2223,13 @@
       "ocr_used": false,
       "ocr_pages": 0,
       "out_dir": "scripts\\data\\extracted\\e_mat_14okt_fl"
+    },
+    "segmented": true,
+    "segmentation": {
+      "problems": 9,
+      "sub_parts": 19,
+      "skipped_pages": 15,
+      "ocr_used": false
     }
   },
   "e_mat_14okt_ut.pdf": {
@@ -1950,6 +2272,13 @@
       "ocr_used": false,
       "ocr_pages": 0,
       "out_dir": "scripts\\data\\extracted\\k_mat_14maj_fl"
+    },
+    "segmented": true,
+    "segmentation": {
+      "problems": 18,
+      "sub_parts": 29,
+      "skipped_pages": 13,
+      "ocr_used": false
     }
   },
   "k_mat_14maj_ut.pdf": {
@@ -1992,6 +2321,13 @@
       "ocr_used": false,
       "ocr_pages": 0,
       "out_dir": "scripts\\data\\extracted\\e_mat_14maj_fl"
+    },
+    "segmented": true,
+    "segmentation": {
+      "problems": 9,
+      "sub_parts": 17,
+      "skipped_pages": 15,
+      "ocr_used": false
     }
   },
   "e_mat_14maj_ut.pdf": {
@@ -2034,6 +2370,13 @@
       "ocr_used": false,
       "ocr_pages": 0,
       "out_dir": "scripts\\data\\extracted\\k_mat_13okt_fl"
+    },
+    "segmented": true,
+    "segmentation": {
+      "problems": 18,
+      "sub_parts": 28,
+      "skipped_pages": 13,
+      "ocr_used": false
     }
   },
   "k_mat_13okt_ut.pdf": {
@@ -2076,6 +2419,13 @@
       "ocr_used": false,
       "ocr_pages": 0,
       "out_dir": "scripts\\data\\extracted\\e_mat_13okt_fl"
+    },
+    "segmented": true,
+    "segmentation": {
+      "problems": 9,
+      "sub_parts": 19,
+      "skipped_pages": 15,
+      "ocr_used": false
     }
   },
   "e_mat_13okt_ut.pdf": {
@@ -2118,6 +2468,13 @@
       "ocr_used": false,
       "ocr_pages": 0,
       "out_dir": "scripts\\data\\extracted\\k_mat_13maj_fl"
+    },
+    "segmented": true,
+    "segmentation": {
+      "problems": 18,
+      "sub_parts": 24,
+      "skipped_pages": 13,
+      "ocr_used": false
     }
   },
   "k_mat_13maj_ut.pdf": {
@@ -2160,6 +2517,13 @@
       "ocr_used": false,
       "ocr_pages": 0,
       "out_dir": "scripts\\data\\extracted\\e_mat_13maj_fl"
+    },
+    "segmented": true,
+    "segmentation": {
+      "problems": 9,
+      "sub_parts": 18,
+      "skipped_pages": 15,
+      "ocr_used": false
     }
   },
   "e_mat_13maj_ut.pdf": {
@@ -2202,6 +2566,13 @@
       "ocr_used": false,
       "ocr_pages": 0,
       "out_dir": "scripts\\data\\extracted\\k_mat_12okt_fl"
+    },
+    "segmented": true,
+    "segmentation": {
+      "problems": 18,
+      "sub_parts": 30,
+      "skipped_pages": 13,
+      "ocr_used": false
     }
   },
   "k_mat_12okt_ut.pdf": {
@@ -2244,6 +2615,13 @@
       "ocr_used": false,
       "ocr_pages": 0,
       "out_dir": "scripts\\data\\extracted\\e_mat_12okt_fl"
+    },
+    "segmented": true,
+    "segmentation": {
+      "problems": 9,
+      "sub_parts": 18,
+      "skipped_pages": 15,
+      "ocr_used": false
     }
   },
   "e_mat_12okt_ut.pdf": {
@@ -2286,6 +2664,13 @@
       "ocr_used": false,
       "ocr_pages": 0,
       "out_dir": "scripts\\data\\extracted\\k_mat_12maj_fl"
+    },
+    "segmented": true,
+    "segmentation": {
+      "problems": 18,
+      "sub_parts": 30,
+      "skipped_pages": 13,
+      "ocr_used": false
     }
   },
   "k_mat_12maj_ut.pdf": {
@@ -2328,6 +2713,13 @@
       "ocr_used": false,
       "ocr_pages": 0,
       "out_dir": "scripts\\data\\extracted\\e_mat_12maj_fl"
+    },
+    "segmented": true,
+    "segmentation": {
+      "problems": 9,
+      "sub_parts": 16,
+      "skipped_pages": 15,
+      "ocr_used": false
     }
   },
   "e_mat_12maj_ut.pdf": {
@@ -2370,6 +2762,13 @@
       "ocr_used": false,
       "ocr_pages": 0,
       "out_dir": "scripts\\data\\extracted\\k_mat_11maj_fl"
+    },
+    "segmented": true,
+    "segmentation": {
+      "problems": 17,
+      "sub_parts": 25,
+      "skipped_pages": 14,
+      "ocr_used": false
     }
   },
   "k_mat_11maj_ut.pdf": {
@@ -2412,6 +2811,13 @@
       "ocr_used": false,
       "ocr_pages": 0,
       "out_dir": "scripts\\data\\extracted\\e_mat_11maj_fl"
+    },
+    "segmented": true,
+    "segmentation": {
+      "problems": 9,
+      "sub_parts": 14,
+      "skipped_pages": 15,
+      "ocr_used": false
     }
   },
   "e_mat_11maj_ut.pdf": {
@@ -2454,6 +2860,13 @@
       "ocr_used": false,
       "ocr_pages": 0,
       "out_dir": "scripts\\data\\extracted\\k_mat_10okt_fl"
+    },
+    "segmented": true,
+    "segmentation": {
+      "problems": 18,
+      "sub_parts": 24,
+      "skipped_pages": 13,
+      "ocr_used": false
     }
   },
   "k_mat_10okt_ut.pdf": {
@@ -2496,6 +2909,13 @@
       "ocr_used": false,
       "ocr_pages": 0,
       "out_dir": "scripts\\data\\extracted\\e_mat_10okt_fl"
+    },
+    "segmented": true,
+    "segmentation": {
+      "problems": 9,
+      "sub_parts": 13,
+      "skipped_pages": 15,
+      "ocr_used": false
     }
   },
   "e_mat_10okt_ut.pdf": {
@@ -2538,6 +2958,13 @@
       "ocr_used": false,
       "ocr_pages": 0,
       "out_dir": "scripts\\data\\extracted\\k_mat_10maj_fl"
+    },
+    "segmented": true,
+    "segmentation": {
+      "problems": 18,
+      "sub_parts": 27,
+      "skipped_pages": 13,
+      "ocr_used": false
     }
   },
   "k_mat_10maj_ut.pdf": {
@@ -2580,6 +3007,13 @@
       "ocr_used": false,
       "ocr_pages": 0,
       "out_dir": "scripts\\data\\extracted\\e_mat_10maj_fl"
+    },
+    "segmented": true,
+    "segmentation": {
+      "problems": 9,
+      "sub_parts": 17,
+      "skipped_pages": 15,
+      "ocr_used": false
     }
   },
   "e_mat_10maj_ut.pdf": {
@@ -2622,6 +3056,13 @@
       "ocr_used": false,
       "ocr_pages": 0,
       "out_dir": "scripts\\data\\extracted\\k_mat_09okt_fl"
+    },
+    "segmented": true,
+    "segmentation": {
+      "problems": 18,
+      "sub_parts": 25,
+      "skipped_pages": 13,
+      "ocr_used": false
     }
   },
   "k_mat_09okt_ut.pdf": {
@@ -2664,6 +3105,13 @@
       "ocr_used": false,
       "ocr_pages": 0,
       "out_dir": "scripts\\data\\extracted\\e_mat_09okt_fl"
+    },
+    "segmented": true,
+    "segmentation": {
+      "problems": 9,
+      "sub_parts": 18,
+      "skipped_pages": 15,
+      "ocr_used": false
     }
   },
   "e_mat_09okt_ut.pdf": {
@@ -2706,6 +3154,13 @@
       "ocr_used": false,
       "ocr_pages": 0,
       "out_dir": "scripts\\data\\extracted\\k_mat_09maj_fl"
+    },
+    "segmented": true,
+    "segmentation": {
+      "problems": 18,
+      "sub_parts": 27,
+      "skipped_pages": 13,
+      "ocr_used": false
     }
   },
   "k_mat_09maj_ut.pdf": {
@@ -2748,6 +3203,13 @@
       "ocr_used": false,
       "ocr_pages": 0,
       "out_dir": "scripts\\data\\extracted\\e_mat_09maj_fl"
+    },
+    "segmented": true,
+    "segmentation": {
+      "problems": 9,
+      "sub_parts": 21,
+      "skipped_pages": 15,
+      "ocr_used": false
     }
   },
   "e_mat_09maj_ut.pdf": {
@@ -2790,6 +3252,13 @@
       "ocr_used": false,
       "ocr_pages": 0,
       "out_dir": "scripts\\data\\extracted\\k_mat_08okt_fl"
+    },
+    "segmented": true,
+    "segmentation": {
+      "problems": 18,
+      "sub_parts": 24,
+      "skipped_pages": 17,
+      "ocr_used": false
     }
   },
   "k_mat_08okt_ut.pdf": {
@@ -2832,6 +3301,13 @@
       "ocr_used": false,
       "ocr_pages": 0,
       "out_dir": "scripts\\data\\extracted\\e_mat_08okt_fl"
+    },
+    "segmented": true,
+    "segmentation": {
+      "problems": 9,
+      "sub_parts": 17,
+      "skipped_pages": 15,
+      "ocr_used": false
     }
   },
   "e_mat_08okt_ut.pdf": {
@@ -2874,6 +3350,13 @@
       "ocr_used": false,
       "ocr_pages": 0,
       "out_dir": "scripts\\data\\extracted\\k_mat_08maj_fl"
+    },
+    "segmented": true,
+    "segmentation": {
+      "problems": 18,
+      "sub_parts": 30,
+      "skipped_pages": 13,
+      "ocr_used": false
     }
   },
   "k_mat_08maj_ut.pdf": {
@@ -2916,6 +3399,13 @@
       "ocr_used": false,
       "ocr_pages": 0,
       "out_dir": "scripts\\data\\extracted\\e_mat_08maj_fl"
+    },
+    "segmented": true,
+    "segmentation": {
+      "problems": 9,
+      "sub_parts": 14,
+      "skipped_pages": 15,
+      "ocr_used": false
     }
   },
   "e_mat_08maj_ut.pdf": {
@@ -2958,6 +3448,13 @@
       "ocr_used": false,
       "ocr_pages": 0,
       "out_dir": "scripts\\data\\extracted\\k_mat_07okt_fl"
+    },
+    "segmented": true,
+    "segmentation": {
+      "problems": 18,
+      "sub_parts": 33,
+      "skipped_pages": 13,
+      "ocr_used": false
     }
   },
   "k_mat_07okt_ut.pdf": {
@@ -3000,6 +3497,13 @@
       "ocr_used": false,
       "ocr_pages": 0,
       "out_dir": "scripts\\data\\extracted\\e_mat_07okt_fl"
+    },
+    "segmented": true,
+    "segmentation": {
+      "problems": 9,
+      "sub_parts": 17,
+      "skipped_pages": 15,
+      "ocr_used": false
     }
   },
   "e_mat_07okt_ut.pdf": {
@@ -3042,6 +3546,13 @@
       "ocr_used": false,
       "ocr_pages": 0,
       "out_dir": "scripts\\data\\extracted\\k_mat_07maj_fl"
+    },
+    "segmented": true,
+    "segmentation": {
+      "problems": 18,
+      "sub_parts": 31,
+      "skipped_pages": 17,
+      "ocr_used": false
     }
   },
   "k_mat_07maj_ut.pdf": {
@@ -3084,6 +3595,13 @@
       "ocr_used": false,
       "ocr_pages": 0,
       "out_dir": "scripts\\data\\extracted\\e_mat_06okt_fl"
+    },
+    "segmented": true,
+    "segmentation": {
+      "problems": 9,
+      "sub_parts": 15,
+      "skipped_pages": 19,
+      "ocr_used": false
     }
   },
   "e_mat_06okt_ut.pdf": {
@@ -3126,6 +3644,13 @@
       "ocr_used": false,
       "ocr_pages": 0,
       "out_dir": "scripts\\data\\extracted\\k_mat_06febr_fl"
+    },
+    "segmented": true,
+    "segmentation": {
+      "problems": 18,
+      "sub_parts": 32,
+      "skipped_pages": 13,
+      "ocr_used": false
     }
   },
   "k_mat_06febr_ut.pdf": {
@@ -3168,6 +3693,13 @@
       "ocr_used": false,
       "ocr_pages": 0,
       "out_dir": "scripts\\data\\extracted\\e_mat_06febr_fl"
+    },
+    "segmented": true,
+    "segmentation": {
+      "problems": 9,
+      "sub_parts": 21,
+      "skipped_pages": 15,
+      "ocr_used": false
     }
   },
   "e_mat_06febr_ut.pdf": {
@@ -3210,6 +3742,13 @@
       "ocr_used": true,
       "ocr_pages": 3,
       "out_dir": "scripts\\data\\extracted\\e_mat_05okt_fl"
+    },
+    "segmented": true,
+    "segmentation": {
+      "problems": 9,
+      "sub_parts": 21,
+      "skipped_pages": 11,
+      "ocr_used": true
     }
   },
   "e_mat_05okt_ut.pdf": {
@@ -3253,6 +3792,13 @@
       "ocr_used": false,
       "ocr_pages": 0,
       "out_dir": "scripts\\data\\extracted\\k_matma_25maj_fl"
+    },
+    "segmented": true,
+    "segmentation": {
+      "problems": 18,
+      "sub_parts": 32,
+      "skipped_pages": 13,
+      "ocr_used": false
     }
   },
   "k_matma_25maj_ut.pdf": {
@@ -3297,6 +3843,13 @@
       "ocr_used": false,
       "ocr_pages": 0,
       "out_dir": "scripts\\data\\extracted\\e_matma_25maj_fl"
+    },
+    "segmented": true,
+    "segmentation": {
+      "problems": 9,
+      "sub_parts": 24,
+      "skipped_pages": 15,
+      "ocr_used": false
     }
   },
   "e_matma_25maj_ut.pdf": {
@@ -3341,6 +3894,13 @@
       "ocr_used": false,
       "ocr_pages": 0,
       "out_dir": "scripts\\data\\extracted\\k_matma_24maj_fl"
+    },
+    "segmented": true,
+    "segmentation": {
+      "problems": 18,
+      "sub_parts": 28,
+      "skipped_pages": 13,
+      "ocr_used": false
     }
   },
   "k_matma_24maj_ut.pdf": {
@@ -3385,6 +3945,13 @@
       "ocr_used": false,
       "ocr_pages": 0,
       "out_dir": "scripts\\data\\extracted\\e_matma_24maj_fl"
+    },
+    "segmented": true,
+    "segmentation": {
+      "problems": 9,
+      "sub_parts": 20,
+      "skipped_pages": 15,
+      "ocr_used": false
     }
   },
   "e_matma_24maj_ut.pdf": {
@@ -3429,6 +3996,13 @@
       "ocr_used": false,
       "ocr_pages": 0,
       "out_dir": "scripts\\data\\extracted\\k_matma_23maj_fl"
+    },
+    "segmented": true,
+    "segmentation": {
+      "problems": 18,
+      "sub_parts": 30,
+      "skipped_pages": 13,
+      "ocr_used": false
     }
   },
   "k_matma_23maj_ut.pdf": {
@@ -3473,6 +4047,13 @@
       "ocr_used": false,
       "ocr_pages": 0,
       "out_dir": "scripts\\data\\extracted\\e_matma_23maj_fl"
+    },
+    "segmented": true,
+    "segmentation": {
+      "problems": 9,
+      "sub_parts": 20,
+      "skipped_pages": 15,
+      "ocr_used": false
     }
   },
   "e_matma_23maj_ut.pdf": {
@@ -3517,6 +4098,13 @@
       "ocr_used": false,
       "ocr_pages": 0,
       "out_dir": "scripts\\data\\extracted\\k_matma_22maj_fl"
+    },
+    "segmented": true,
+    "segmentation": {
+      "problems": 18,
+      "sub_parts": 26,
+      "skipped_pages": 13,
+      "ocr_used": false
     }
   },
   "k_matma_22maj_ut.pdf": {
@@ -3561,6 +4149,13 @@
       "ocr_used": false,
       "ocr_pages": 0,
       "out_dir": "scripts\\data\\extracted\\e_matma_22maj_fl"
+    },
+    "segmented": true,
+    "segmentation": {
+      "problems": 9,
+      "sub_parts": 21,
+      "skipped_pages": 15,
+      "ocr_used": false
     }
   },
   "e_matma_22maj_ut.pdf": {
@@ -3605,6 +4200,13 @@
       "ocr_used": false,
       "ocr_pages": 0,
       "out_dir": "scripts\\data\\extracted\\k_matma_21maj_fl"
+    },
+    "segmented": true,
+    "segmentation": {
+      "problems": 18,
+      "sub_parts": 32,
+      "skipped_pages": 13,
+      "ocr_used": false
     }
   },
   "k_matma_21maj_ut.pdf": {
@@ -3649,6 +4251,13 @@
       "ocr_used": false,
       "ocr_pages": 0,
       "out_dir": "scripts\\data\\extracted\\e_matma_21maj_fl"
+    },
+    "segmented": true,
+    "segmentation": {
+      "problems": 9,
+      "sub_parts": 21,
+      "skipped_pages": 15,
+      "ocr_used": false
     }
   },
   "e_matma_21maj_ut.pdf": {
@@ -3693,6 +4302,13 @@
       "ocr_used": false,
       "ocr_pages": 0,
       "out_dir": "scripts\\data\\extracted\\k_matma_20maj_fl"
+    },
+    "segmented": true,
+    "segmentation": {
+      "problems": 18,
+      "sub_parts": 25,
+      "skipped_pages": 13,
+      "ocr_used": false
     }
   },
   "k_matma_20maj_ut.pdf": {
@@ -3737,6 +4353,13 @@
       "ocr_used": false,
       "ocr_pages": 0,
       "out_dir": "scripts\\data\\extracted\\e_matma_20maj_fl"
+    },
+    "segmented": true,
+    "segmentation": {
+      "problems": 9,
+      "sub_parts": 17,
+      "skipped_pages": 15,
+      "ocr_used": false
     }
   },
   "e_matma_20maj_ut.pdf": {
@@ -3781,6 +4404,13 @@
       "ocr_used": false,
       "ocr_pages": 0,
       "out_dir": "scripts\\data\\extracted\\k_matma_19maj_fl"
+    },
+    "segmented": true,
+    "segmentation": {
+      "problems": 18,
+      "sub_parts": 31,
+      "skipped_pages": 13,
+      "ocr_used": false
     }
   },
   "k_matma_19maj_ut.pdf": {
@@ -3825,6 +4455,13 @@
       "ocr_used": false,
       "ocr_pages": 0,
       "out_dir": "scripts\\data\\extracted\\e_matma_19maj_fl"
+    },
+    "segmented": true,
+    "segmentation": {
+      "problems": 9,
+      "sub_parts": 23,
+      "skipped_pages": 15,
+      "ocr_used": false
     }
   },
   "e_matma_19maj_ut.pdf": {
@@ -3869,6 +4506,13 @@
       "ocr_used": false,
       "ocr_pages": 0,
       "out_dir": "scripts\\data\\extracted\\k_matma_18maj_fl"
+    },
+    "segmented": true,
+    "segmentation": {
+      "problems": 18,
+      "sub_parts": 28,
+      "skipped_pages": 13,
+      "ocr_used": false
     }
   },
   "k_matma_18maj_ut.pdf": {
@@ -3913,6 +4557,13 @@
       "ocr_used": false,
       "ocr_pages": 0,
       "out_dir": "scripts\\data\\extracted\\e_matma_18maj_fl"
+    },
+    "segmented": true,
+    "segmentation": {
+      "problems": 9,
+      "sub_parts": 18,
+      "skipped_pages": 15,
+      "ocr_used": false
     }
   },
   "e_matma_18maj_ut.pdf": {
@@ -3957,6 +4608,13 @@
       "ocr_used": false,
       "ocr_pages": 0,
       "out_dir": "scripts\\data\\extracted\\k_matma_17maj_fl"
+    },
+    "segmented": true,
+    "segmentation": {
+      "problems": 18,
+      "sub_parts": 31,
+      "skipped_pages": 13,
+      "ocr_used": false
     }
   },
   "k_matma_17maj_ut.pdf": {
@@ -4001,6 +4659,13 @@
       "ocr_used": false,
       "ocr_pages": 0,
       "out_dir": "scripts\\data\\extracted\\e_matma_17maj_fl"
+    },
+    "segmented": true,
+    "segmentation": {
+      "problems": 9,
+      "sub_parts": 21,
+      "skipped_pages": 15,
+      "ocr_used": false
     }
   },
   "e_matma_17maj_ut.pdf": {
@@ -4045,6 +4710,13 @@
       "ocr_used": false,
       "ocr_pages": 0,
       "out_dir": "scripts\\data\\extracted\\k_matma_16maj_fl"
+    },
+    "segmented": true,
+    "segmentation": {
+      "problems": 18,
+      "sub_parts": 24,
+      "skipped_pages": 13,
+      "ocr_used": false
     }
   },
   "k_matma_16maj_ut.pdf": {
@@ -4089,6 +4761,13 @@
       "ocr_used": false,
       "ocr_pages": 0,
       "out_dir": "scripts\\data\\extracted\\e_matma_16maj_fl"
+    },
+    "segmented": true,
+    "segmentation": {
+      "problems": 9,
+      "sub_parts": 18,
+      "skipped_pages": 15,
+      "ocr_used": false
     }
   },
   "e_matma_16maj_ut.pdf": {
@@ -4133,6 +4812,13 @@
       "ocr_used": false,
       "ocr_pages": 0,
       "out_dir": "scripts\\data\\extracted\\k_matma_15maj_fl"
+    },
+    "segmented": true,
+    "segmentation": {
+      "problems": 18,
+      "sub_parts": 28,
+      "skipped_pages": 13,
+      "ocr_used": false
     }
   },
   "k_matma_15maj_ut.pdf": {
@@ -4177,6 +4863,13 @@
       "ocr_used": false,
       "ocr_pages": 0,
       "out_dir": "scripts\\data\\extracted\\e_matma_15maj_fl"
+    },
+    "segmented": true,
+    "segmentation": {
+      "problems": 9,
+      "sub_parts": 16,
+      "skipped_pages": 15,
+      "ocr_used": false
     }
   },
   "e_matma_15maj_ut.pdf": {
@@ -4221,6 +4914,13 @@
       "ocr_used": false,
       "ocr_pages": 0,
       "out_dir": "scripts\\data\\extracted\\k_matma_14maj_fl"
+    },
+    "segmented": true,
+    "segmentation": {
+      "problems": 18,
+      "sub_parts": 31,
+      "skipped_pages": 13,
+      "ocr_used": false
     }
   },
   "k_matma_14maj_ut.pdf": {
@@ -4265,6 +4965,13 @@
       "ocr_used": false,
       "ocr_pages": 0,
       "out_dir": "scripts\\data\\extracted\\e_matma_14maj_fl"
+    },
+    "segmented": true,
+    "segmentation": {
+      "problems": 9,
+      "sub_parts": 18,
+      "skipped_pages": 15,
+      "ocr_used": false
     }
   },
   "e_matma_14maj_ut.pdf": {
@@ -4309,6 +5016,13 @@
       "ocr_used": false,
       "ocr_pages": 0,
       "out_dir": "scripts\\data\\extracted\\k_matma_13maj_fl"
+    },
+    "segmented": true,
+    "segmentation": {
+      "problems": 18,
+      "sub_parts": 28,
+      "skipped_pages": 17,
+      "ocr_used": false
     }
   },
   "k_matma_13maj_ut.pdf": {
@@ -4353,6 +5067,13 @@
       "ocr_used": false,
       "ocr_pages": 0,
       "out_dir": "scripts\\data\\extracted\\e_matma_13maj_fl"
+    },
+    "segmented": true,
+    "segmentation": {
+      "problems": 9,
+      "sub_parts": 15,
+      "skipped_pages": 15,
+      "ocr_used": false
     }
   },
   "e_matma_13maj_ut.pdf": {
@@ -4397,6 +5118,13 @@
       "ocr_used": false,
       "ocr_pages": 0,
       "out_dir": "scripts\\data\\extracted\\k_matma_12maj_fl"
+    },
+    "segmented": true,
+    "segmentation": {
+      "problems": 18,
+      "sub_parts": 29,
+      "skipped_pages": 13,
+      "ocr_used": false
     }
   },
   "k_matma_12maj_ut.pdf": {
@@ -4441,6 +5169,13 @@
       "ocr_used": false,
       "ocr_pages": 0,
       "out_dir": "scripts\\data\\extracted\\e_matma_12maj_fl"
+    },
+    "segmented": true,
+    "segmentation": {
+      "problems": 9,
+      "sub_parts": 15,
+      "skipped_pages": 15,
+      "ocr_used": false
     }
   },
   "e_matma_12maj_ut.pdf": {
@@ -4485,6 +5220,13 @@
       "ocr_used": false,
       "ocr_pages": 0,
       "out_dir": "scripts\\data\\extracted\\k_matma_11maj_fl"
+    },
+    "segmented": true,
+    "segmentation": {
+      "problems": 18,
+      "sub_parts": 25,
+      "skipped_pages": 13,
+      "ocr_used": false
     }
   },
   "k_matma_11maj_ut.pdf": {
@@ -4529,6 +5271,13 @@
       "ocr_used": false,
       "ocr_pages": 0,
       "out_dir": "scripts\\data\\extracted\\e_matma_11maj_fl"
+    },
+    "segmented": true,
+    "segmentation": {
+      "problems": 9,
+      "sub_parts": 14,
+      "skipped_pages": 15,
+      "ocr_used": false
     }
   },
   "e_matma_11maj_ut.pdf": {
@@ -4573,6 +5322,13 @@
       "ocr_used": false,
       "ocr_pages": 0,
       "out_dir": "scripts\\data\\extracted\\k_matma_10maj_fl"
+    },
+    "segmented": true,
+    "segmentation": {
+      "problems": 6,
+      "sub_parts": 13,
+      "skipped_pages": 18,
+      "ocr_used": false
     }
   },
   "k_matma_10maj_ut.pdf": {
@@ -4617,6 +5373,13 @@
       "ocr_used": false,
       "ocr_pages": 0,
       "out_dir": "scripts\\data\\extracted\\e_matma_10maj_fl"
+    },
+    "segmented": true,
+    "segmentation": {
+      "problems": 9,
+      "sub_parts": 18,
+      "skipped_pages": 15,
+      "ocr_used": false
     }
   },
   "e_matma_10maj_ut.pdf": {
